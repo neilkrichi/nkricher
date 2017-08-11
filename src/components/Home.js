@@ -16,10 +16,10 @@ class Home extends Component {
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
           <div className="fa-socials">
-            <FontAwesome name='twitter' size='2x' />
-            <FontAwesome name='github' size='2x' />
-            <FontAwesome name='linkedin' size='2x' />
-            <FontAwesome name='instagram' size='2x' />
+            <FontAwesome className="fa" name='twitter' size='2x' />
+            <FontAwesome className="fa" name='github' size='2x' />
+            <FontAwesome className="fa" name='linkedin' size='2x' />
+            <FontAwesome className="fa" name='instagram' size='2x' />
           </div>
         </div>
       </div>

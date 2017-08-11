@@ -7,6 +7,10 @@
   float: left;
 }
 
+.fa {
+  padding: 0px 10px;
+}
+
 .fa-socials {
   color: white;
   float: right;
@@ -39,6 +43,8 @@
   display: inline;
   padding: 0px 15px;
   margin: 0px;
+  font-size: 1.3em;
+  font-family: Myriad Pro, Open Sans, Helvetica Neue, sans-serif;
 }
 
 .App ul li a:hover {
