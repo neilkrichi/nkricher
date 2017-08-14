@@ -11,6 +11,7 @@ export default class Projects extends Component {
       <div>
         <TopNav />
         <h1>Here are my projects</h1>
+        <Footer />
       </div>
 
     )

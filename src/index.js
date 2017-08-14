@@ -14,6 +14,7 @@ ReactDOM.render((
   <Route path="/" component={Home}/>
   <Route path="/about" component={About}/>
   <Route path="/projects" component={Projects}/>
+  <Route path="/resume" component={Projects}/>
   <Route path="/contact" component={Contact}/>
 </Router> ), document.getElementById('root'));
 registerServiceWorker();

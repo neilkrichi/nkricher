@@ -12,6 +12,7 @@ export default class Contact extends Component {
       <div>
         <TopNav />
         <h1>Contact me!</h1>
+        <Footer />
       </div>
     )
   }
