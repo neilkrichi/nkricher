@@ -15,13 +15,15 @@ export default class Resume extends Component {
     return (
       <div>
         <TopNav />
-        <h1>Here is my resume</h1>
-        <div className='resume'>
-          <ReactPDF
-             file={resume}
-             onDocumentError={({ message }) => alert('Error while loading document! ' + message)}
-             loading="Loading. Please wait!"
-              />
+        <div className='resume-page'>
+          <div className='resume'>
+            <ReactPDF
+               file={resume}
+               onDocumentError={({ message }) => alert('Error while loading document! ' + message)}
+               loading="Loading. Please wait!"
+               scale={1.2}
+                />
+          </div>
         </div>
         <Footer />
       </div>

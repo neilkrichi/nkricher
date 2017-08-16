@@ -11,7 +11,9 @@ export default class Contact extends Component {
     return (
       <div>
         <TopNav />
-        <h1>Contact me!</h1>
+        <div className='contact-page'> 
+          <h1>Contact me!</h1>
+        </div>
         <Footer />
       </div>
     )

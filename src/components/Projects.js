@@ -10,7 +10,9 @@ export default class Projects extends Component {
     return (
       <div>
         <TopNav />
-        <h1>Here are my projects</h1>
+        <div className='projects-page'>
+          <h1>Here are my projects</h1>
+        </div>
         <Footer />
       </div>
 

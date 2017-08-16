@@ -1,10 +1,5 @@
-.topnav {
-  display: inline;
-}
-
 .App-logo {
   height: 70px;
-  float: left;
 }
 
 .fa {
@@ -13,9 +8,16 @@
 
 .fa-socials {
   color: white;
-  float: right;
-  overflow: hidden;
   padding: 20px 0px;
+  border: 1px solid red;
+}
+
+.App {
+  background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
+  height: 1000px;
+}
+.App .App-header {
+  background-color: transparent;
 }
 
 .App-header {
@@ -23,10 +25,21 @@
   padding: 10px 80px;
   color: white;
   height: 80px;
+  text-align: center;
 }
 
-.App-header img {
+.App-header .logo-img {
+  display: inline-block;
   float: left;
+}
+
+.App-header .fa-socials {
+  display: inline-block;
+  float: right;
+}
+
+.App-header .site-map {
+  display: inline-block;
 }
 
 .App-intro {
@@ -36,7 +49,6 @@
 .topnav ul {
   margin: 0px;
   padding: 30px 0px;
-  display: inline-block;
 }
 
 .topnav ul li {
@@ -56,10 +68,64 @@
   text-decoration: none;
 }
 
+.main-header {
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .footer {
+  bottom: 0;
   text-align: center;
   height: 40px;
   background-color: #1B1A1A;
   color: white;
   padding: 20px 20px 0px 20px;
 }
+
+.site-map {
+  border: 1px solid blue
+}
+
+.about-page {
+  text-align: center;
+}
+
+.projects-page {
+  text-align: center;
+}
+
+.resume-page {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.resume {
+  padding: 20px 0px;
+}
+
+.contact-page {
+  text-align: center;
+}
+
+/* iPhone (up to 6+ )*/
+@media only screen  and (max-width: 999px) {
+  .hide-sm{
+    display: none !important;
+  }
+}
+
+@media only screen  and (min-width: 736px) {
+  .xs-only{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+    .hide-xs {
+      display: none !important;
+    }
+}
+/* ---------- */

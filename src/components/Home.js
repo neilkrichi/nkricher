@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <div className="App">
         <TopNav />
-        <h1>Home :)</h1>
+        <h1 className='main-header'>Home :)</h1>
         <Footer />
       </div>
     );

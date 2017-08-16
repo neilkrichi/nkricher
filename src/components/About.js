@@ -21,7 +21,9 @@ export default class About extends Component {
     return (
       <div>
         <TopNav />
-        <h1>About me :)</h1>
+        <div className='about-page'>
+          <h1>About me :)</h1>
+        </div>
         <Footer />
       </div>
     )
