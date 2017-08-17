@@ -118,6 +118,27 @@
   text-decoration: none;
 }
 
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.contact-page .contact-form {
+  border: 1px solid blue;
+}
+
+.contact-page .location-details {
+  border: 1px solid red;
+}
+
+.map-wrapper > div {
+  height: 300px;
+  width: 320px;
+}
+
+
 
 .footer {
   bottom: 0;
