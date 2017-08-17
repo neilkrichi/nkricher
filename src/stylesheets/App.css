@@ -68,13 +68,42 @@
   text-decoration: none;
 }
 
-.main-header {
-  color: white;
-  padding: 50px;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
+.burger-menu {
+  padding: 20px 0px;
 }
+
+.App {
+  text-align: center;
+}
+
+.App .app-intro {
+  font-size: 36px;
+}
+
+.intro-text h1 {
+  font-size: 48px;
+}
+
+.cta-button {
+  width: 15%;
+  background-color: transparent;
+  color: white;
+  padding: 12px 5px;
+  margin: 8px 0;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.cta-button:hover {
+  background-color: #4A1C0D;
+  border: none;
+}
+
+.cta-button:hover a {
+  text-decoration: none;
+}
+
 
 .footer {
   bottom: 0;
@@ -126,6 +155,10 @@
 @media only screen and (max-width: 736px) {
     .hide-xs {
       display: none !important;
+    }
+
+    .App-header {
+      padding: 10px 30px;
     }
 }
 /* ---------- */
