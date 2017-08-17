@@ -8,7 +8,7 @@ import Footer from './Footer'
 import logo from '../NKlogo.png'
 import '../stylesheets/App.css';
 
-const words = ['a creative', 'an enthusiastic', 'an adventurous', 'a passionate'];
+const words = [' creative', 'n enthusiastic', 'n adventurous', ' passionate'];
 
 
 export default class Home extends Component {
@@ -16,12 +16,12 @@ export default class Home extends Component {
     return (
       <div className="App">
         <TopNav />
-        <div className="intro-text">
-          <h1>Welcome,</h1> <br/>
+        <div className="intro">
+          <h1>Hello, it's me.</h1> <br/>
           <h3 className="app-intro">
-            My name is Neil and I am <span className='typewriter'><TypeOut words={words} typeSpeed={150} /></span> designer and developer.
+            I'm Neil and I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> designer and developer.
           </h3> <br/>
-        <button className="cta-button"><Link to='/projects'>Let's see what you got, Neil</Link></button>
+        <Link to='/projects'><button className="cta-button">Let's see what you've got, Neil.</button></Link>
         </div>
         <Footer />
       </div>
