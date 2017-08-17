@@ -13,7 +13,7 @@
 
 .App {
   background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
-  height: 1000px;
+  height: 940px;
 }
 .App .App-header {
   background-color: transparent;
@@ -127,10 +127,12 @@
 
 .contact-page .contact-form {
   border: 1px solid blue;
+  padding: 50px;
 }
 
 .contact-page .location-details {
   border: 1px solid red;
+  padding: 50px;
 }
 
 .map-wrapper > div {
@@ -141,7 +143,6 @@
 
 
 .footer {
-  bottom: 0;
   text-align: center;
   height: 40px;
   background-color: #1B1A1A;
