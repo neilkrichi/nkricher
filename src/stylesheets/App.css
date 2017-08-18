@@ -168,6 +168,10 @@
   padding: 20px 0px;
 }
 
+.resume > canvas {
+  border: 1px solid black;
+}
+
 .contact-page {
   text-align: center;
 }
