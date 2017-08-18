@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 import { Link } from 'react-router'
-import logo from '../NKlogo.png'
+import logo from '../NKlogov2.png'
 import '../stylesheets/App.css';
 
 
