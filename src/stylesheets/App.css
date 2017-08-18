@@ -21,7 +21,7 @@
 }
 
 .App-header {
-  background-color: black;
+  background-color: #1B1A1A;
   padding: 10px 80px;
   color: white;
   height: 80px;
@@ -122,26 +122,81 @@
 .contact-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0px;
+  padding: 0px 0px;
+}
+
+.contact-page h1 {
+  font-size: 2em;
+  font-weight: 500;
 }
 
 .contact-page .contact-form {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   padding: 50px;
+  margin: 0px 20px;
+  width: 450px;
+}
+
+.create-form input {
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.create-form textarea {
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.create-form div {
+  padding: 10px 0px;
+}
+
+.create-form div > label {
+  font-size: 1.1em;
+}
+
+.create-form .submit-form {
+  width: 50%;
+  background-color: #1B1A1A;
+  color: white;
+  padding: 8px 5px;
+  margin: 15px 0;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.create-form .submit-form:hover {
+  background-color: rgba(27, 26, 26, 0.82);
 }
 
 .contact-page .location-details {
-  border: 1px solid red;
-  padding: 50px;
+  /*border: 1px solid red;*/
+  margin: 0px 20px;
+  padding: 100px 40px;
+  text-align: left;
+}
+
+.contact-page .location-details .map-wrapper {
+  padding-bottom: 10px;
+}
+
+.contact-page .location-details .contact-details p {
+  margin: 5px;
 }
 
 .map-wrapper > div {
-  height: 300px;
-  width: 320px;
+  height: 250px;
+  width: 280px;
+  border-radius: 10px;
 }
-
-
 
 .footer {
   text-align: center;
@@ -150,7 +205,6 @@
   color: white;
   padding: 20px 20px 0px 20px;
 }
-
 
 .about-page {
   text-align: center;
@@ -171,10 +225,6 @@
 
 .resume > canvas {
   border: 1px solid black;
-}
-
-.contact-page {
-  text-align: center;
 }
 
 /* iPhone (up to 6+ )*/

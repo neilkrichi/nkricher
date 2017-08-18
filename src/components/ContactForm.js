@@ -37,16 +37,19 @@ export default class ContactForm extends Component {
 
   render(){
     return(
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type='text'
-          name='name'
-          value={this.state.name}
-          placeholder=''
-          onChange={this.handleInputChange}
-          ></input>
+      <form className='create-form' onSubmit={this.handleSubmit}>
         <div>
-          <label>Email </label><br/>
+          <label>Your name</label><br/>
+          <input
+            type='text'
+            name='name'
+            value={this.state.name}
+            placeholder=''
+            onChange={this.handleInputChange}
+            />
+        </div>
+        <div>
+          <label>Your email</label><br/>
           <input
             type='text'
             name='email'
@@ -54,16 +57,20 @@ export default class ContactForm extends Component {
             placeholder=''
             onBlur={this.validateEmail}
             onChange={this.handleInputChange}
-            ></input>
+            />
           {this.state.emailError}
         </div>
-        <input
-          type='text'
-          name='message'
-          value={this.state.message}
-          placeholder=''
-          onChange={this.handleInputChange}
-          ></input>
+        <div>
+          <label>Your message</label><br/>
+          <textarea
+            type='text'
+            name='message'
+            value={this.state.message}
+            placeholder=''
+            onChange={this.handleInputChange}
+            />
+        </div>
+        <button type="submit" className='submit-form' onClick={this.handleSubmit}>Send</button>
       </form>
     )
   }
