@@ -6,12 +6,61 @@ import '../stylesheets/App.css';
 
 
 export default class TopNav extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      popupOpen: false,
+    }
+  }
+
+  togglePopup(){
+    this.setState({popupOpen: !this.state.popupOpen})
+    // this.setState({a : b}) > a = b
+    // TOGGLE BETWEEN 2 STATES
+  }
+
+  renderClosed(){
+    return(
+      <div onClick={this.togglePopup.bind(this)} className='closed'>
+      </div>
+    )
+  }
+
+  renderOpen(){
+    return(
+      <div className='open'>
+          <ul className='navbar-list navbar-list-mobile'>
+            <Link to='/about'><li>About</li></Link>
+            <Link to='/projects'><li>Projects</li></Link>
+            <Link to='/resume'><li>Resume</li></Link>
+            <Link to='/contact'><li>Contact</li></Link>
+          </ul>
+      </div>
+    )
+  }
+
+  renderPopup(){
+    return this.state.popupOpen ? this.renderOpen() : this.renderClosed()
+  }
+
+  renderBurgerIcon() {
+    if (this.state.popupOpen) {
+      return 'times'
+    }
+    else {
+      return 'bars'
+    }
+  }
+
   render() {
     return (
       <div className='topnav'>
         <div className='App-header xs-only'>
-          <img src={logo} className="App-logo pull-left" alt="logo" />
-          <FontAwesome className="fa pull-right burger-menu" name='bars' size='2x' />
+          <Link to='/'><img src={logo} className="App-logo pull-left" alt="logo" /></Link>
+          <FontAwesome onClick={this.togglePopup.bind(this)} className="fa pull-right burger-menu" name={this.renderBurgerIcon()} size='2x' />
+        </div>
+        <div className='xs-only'>
+          {this.renderPopup()}
         </div>
         <div className="App-header hide-xs">
           <div className='logo-img'>
@@ -19,10 +68,10 @@ export default class TopNav extends Component {
           </div>
           <div className='site-map'>
             <ul className='navbar-list'>
-              <li><Link to='/about'>About</Link></li>
-              <li><Link to='/projects'>Projects</Link></li>
-              <li><Link to='/resume'>Resume</Link></li>
-              <li><Link to='/contact'>Contact</Link></li>
+              <Link to='/about'><li>About</li></Link>
+              <Link to='/projects'><li>Projects</li></Link>
+              <Link to='/resume'><li>Resume</li></Link>
+              <Link to='/contact'><li>Contact</li></Link>
             </ul>
           </div>
           <div className="fa-socials hide-sm">

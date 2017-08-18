@@ -22,7 +22,7 @@ export default class Contact extends Component {
               <p><strong>Tel:</strong> +1 (514) 834-6382 </p>
               <p><strong>Email:</strong> <a href='mailto:neilkrichi@gmail.com'>neilkrichi@gmail.com</a></p>
               <p><strong>Skype:</strong> neil.krichi</p>
-              <p><strong>Address:</strong>225 W. 8th Ave #300, Vancouver, BC V5Y 1N3</p>
+              <p><strong>Address:</strong> 225 W. 8th Ave #300, Vancouver, BC V5Y 1N3</p>
             </div>
           </div>
         </div>
