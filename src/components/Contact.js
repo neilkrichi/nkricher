@@ -16,7 +16,7 @@ export default class Contact extends Component {
             <h1>Send me an email</h1>
             <ContactForm />
           </div>
-          <div className='location-details hide-xs'>
+          <div className='location-details'>
             <div className='map-wrapper'><GoogleMap className='map' /></div>
             <div className='contact-details'>
               <p><strong>Tel:</strong> +1 (514) 834-6382 </p>

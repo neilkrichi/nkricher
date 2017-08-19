@@ -14,14 +14,15 @@
 
 .App {
   background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
-  height: 940px;
+  height: 900px;
 }
+
 .App .App-header {
-  background-color: transparent;
+  background: transparent;
 }
 
 .App-header {
-  background-color: #1B1A1A;
+  background: linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd);
   padding: 10px 80px;
   color: white;
   height: 80px;
@@ -45,10 +46,6 @@
 .app-intro {
   font-weight: normal;
 }
-
-/* .app-intro .typewriter {
-  color: black;
-} */
 
 .topnav ul {
   margin: 0px;
@@ -84,7 +81,7 @@
 }
 
 .intro {
-  height: 700px;
+  height: 650px;
   padding-top: 120px;
   color: white;
 }
@@ -103,7 +100,7 @@
   margin: 8px 0;
   border: 2px solid white;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .cta-button:hover {
@@ -119,22 +116,30 @@
   text-decoration: none;
 }
 
+/*FOR LARGE SCREENS ONLY*/
+
+@media only screen  and (min-width: 999px) {
+
 .contact-page {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0px;
-  padding: 0px 0px;
+  padding: 30px 0px;
 }
 
+}
+
+/*--------------- End of large screens*/
+
 .contact-page h1 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 500;
 }
 
 .contact-page .contact-form {
   /*border: 1px solid blue;*/
-  padding: 50px;
+  padding: 40px;
   margin: 0px 20px;
   width: 450px;
 }
@@ -190,6 +195,7 @@
   padding-bottom: 10px;
 }
 
+
 .contact-page .location-details .contact-details p {
   margin: 5px;
 }
@@ -198,6 +204,7 @@
   height: 250px;
   width: 280px;
   border-radius: 10px;
+  margin: 0px auto;
 }
 
 .footer {
@@ -229,10 +236,41 @@
   border: 1px solid black;
 }
 
-/* iPhone (up to 6+ )*/
+/* iPhone (up to 6+ ) and tablet*/
 @media only screen  and (max-width: 999px) {
   .hide-sm{
     display: none !important;
+  }
+
+  .contact-page .contact-form {
+    width: auto;
+    padding: 40px;
+  }
+
+  .contact-page .location-details {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .contact-page .location-details .map-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .map-wrapper > div {
+    height: 350px;
+    width: 380px;
+  }
+
+  .create-form .submit-form {
+    width: 100%;
+    background-color: #1B1A1A;
+    color: white;
+    padding: 12px 5px;
+    margin: 15px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
   }
 
 }
@@ -253,7 +291,7 @@
     }
 
     .App .topnav ul li {
-      background-color: transparent;
+      background: transparent;
       border: 1px solid rgba(245, 245, 245, 0.3);
     }
     .topnav ul {
@@ -264,12 +302,28 @@
     .topnav ul li {
       display: block;
       padding: 10px 10px;
-      background-color: #1B1A1A;
+      background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
       margin: 0px;
       font-size: 1.3em;
       clear: both;
       z-index: 100;
       border-top: 1px solid rgba(245, 245, 245, 0.1);
+    }
+
+    .contact-page .contact-form {
+      margin: 0px;
+    }
+    .footer {
+      padding-bottom: 20px;
+    }
+    .footer .pull-left {
+      float: none;
+      text-align: center;
+    }
+
+    .footer .pull-right {
+      float: none;
+      text-align: center;
     }
 
 }
