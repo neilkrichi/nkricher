@@ -116,22 +116,6 @@
   text-decoration: none;
 }
 
-/*FOR LARGE SCREENS ONLY*/
-
-@media only screen  and (min-width: 999px) {
-
-.contact-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0px;
-  padding: 30px 0px;
-}
-
-}
-
-/*--------------- End of large screens*/
-
 .contact-page h1 {
   font-size: 2.4em;
   font-weight: 500;
@@ -235,6 +219,67 @@
 .resume > canvas {
   border: 1px solid black;
 }
+
+.projects-row .col {
+  height: 300px;
+  width: 300px;
+}
+
+.projects-row .col {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-row .first-item {
+  border: 1px solid blue;
+  background-image: url('../Surflifelogo.png');
+}
+
+.projects-row .second-item {
+  border: 1px solid red;
+  background-image: url('../roastrlogo.png');
+}
+
+.projects-row .third-item {
+  border: 1px solid green;
+  background-image: url('../tmteamlogo.png');
+}
+
+.projects-row .fourth-item {
+  border: 1px solid yellow;
+}
+
+.projects-row .fifth-item {
+  border: 1px solid black;
+}
+
+.projects-row .sixth-item {
+  border: 1px solid violet;
+}
+
+/*FOR LARGE SCREENS ONLY*/
+
+@media only screen  and (min-width: 999px) {
+
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  padding: 30px 0px;
+}
+
+.projects-page .projects-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 30px 0px;
+}
+
+}
+
+/*--------------- End of large screens*/
 
 /* iPhone (up to 6+ ) and tablet*/
 @media only screen  and (max-width: 999px) {
