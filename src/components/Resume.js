@@ -7,7 +7,7 @@ import TopNav from './TopNav'
 import Footer from './Footer'
 import logo from '../NKlogo.png'
 import '../stylesheets/App.css'
-import resume from '../resumev3.pdf'
+import resume from '../resumev4.pdf'
 
 export default class Resume extends Component {
 

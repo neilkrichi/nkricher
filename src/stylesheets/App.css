@@ -237,6 +237,7 @@
 
 .projects-page {
   text-align: center;
+  padding: 50px 0px
 }
 
 .resume-page {
@@ -306,7 +307,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0px;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 }
@@ -361,6 +362,23 @@
 @media only screen and (max-width: 736px) {
     .hide-xs {
       display: none !important;
+    }
+
+    .footer .fa-socials .fa {
+      padding: 5px 15px 15px 10px;
+    }
+
+    .footer .fa-socials .fa-2x {
+      font-size: 1.8em;
+    }
+
+    .footer .fa-socials a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer {
+      height: 100px;
     }
 
     .App-header {

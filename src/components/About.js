@@ -10,19 +10,12 @@ import '../stylesheets/App.css'
 export default class About extends Component {
 
   render() {
-    const styles = {
-      fontFamily: 'Menlo-Regular, Menlo, monospace',
-      fontSize: 14,
-      lineHeight: '10px',
-      color: 'white',
-      display: 'flex', alignItems: 'center', justifyContent: 'center'
-  }
-
     return (
       <div>
         <TopNav />
         <div className='about-page'>
-          <h1>About me :)</h1>
+          <h1>Hello, I'm Neil. Designer and Front-End developer currently living in Vancouver, Canada.</h1>
+          <p>I enjoy solving tough problems and creating delightful, user-friendly designs and interfaces. </p>
         </div>
         <Footer />
       </div>
