@@ -21,8 +21,6 @@ export default class Projects extends Component {
             <div className="col third-item">
               Box 3
             </div>
-          </div>
-          <div className="projects-row">
             <div className="col fourth-item">
               Box 1
             </div>
