@@ -7,8 +7,10 @@ export default class ContactForm extends Component {
     this.state = {
       name: '',
       email: '',
+      message: '',
       emailError: '',
-      message: ''
+      emptyFieldError: '',
+      successMessage: ''
     };
 
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -17,13 +19,13 @@ export default class ContactForm extends Component {
   }
 
   validateEmail(){
-    if (this.state.email === '') {
+    if (this.state.email === ''){
       this.setState({emailError: ''})
     }
     else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,9}$/i.test(this.state.email)) {
-      this.setState({emailError: 'error'})
-    }else{
-      this.setState({emailError: 'nice'})
+      this.setState({emailError: 'Please enter a valid email address'})
+    } else{
+      this.setState({emailError: ''})
     }
   }
 
@@ -33,6 +35,12 @@ export default class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    if (this.state.name === '' || this.state.message === '' || this.state.email === '') {
+      this.setState({emptyFieldError: 'All field are required.', successMessage: ''})
+    }
+    else {
+      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', message: ''});
+    }
   }
 
   render(){
@@ -58,7 +66,7 @@ export default class ContactForm extends Component {
             onBlur={this.validateEmail}
             onChange={this.handleInputChange}
             />
-          {this.state.emailError}
+          <span className='error-message'>{this.state.emailError}</span>
         </div>
         <div>
           <label>Your message</label><br/>
@@ -71,6 +79,8 @@ export default class ContactForm extends Component {
             />
         </div>
         <button type="submit" className='submit-form' onClick={this.handleSubmit}>Send</button>
+        <br/> <span className='error-message'>{this.state.emptyFieldError}</span>
+         <span className='success-message'>{this.state.successMessage}</span>
       </form>
     )
   }

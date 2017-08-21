@@ -148,8 +148,9 @@
 }
 
 .create-form textarea {
-  height: 120px;
+  height: 140px;
   width: 100%;
+  margin: 10px 0px 5px 0px;
   padding: 5px;
   font-size: 12px;
   border-radius: 4px;
@@ -160,7 +161,7 @@
 .create-form textarea:focus {
   outline: none;
   border-width: 2px;
-  height: 150px;
+  height: 160px;
   padding: 8px;
   font-size: 14px;
   transition: ease-in-out 0.2s;
@@ -174,8 +175,18 @@
   font-size: 1.1em;
 }
 
+.create-form .error-message {
+  color: red;
+  font-size: 11px;
+}
+
+.create-form .success-message {
+  color: black;
+  font-size: 12px;
+}
+
 .create-form .submit-form {
-  width: 50%;
+  width: 40%;
   background-color: #1B1A1A;
   color: white;
   padding: 8px 5px;
@@ -191,9 +202,8 @@
 }
 
 .contact-page .location-details {
-  /*border: 1px solid red;*/
   margin: 0px 20px;
-  padding: 120px 40px;
+  padding: 100px 40px;
   text-align: left;
 }
 
