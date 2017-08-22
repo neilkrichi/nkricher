@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Parallax from 'react-springy-parallax'
 
 import TopNav from './TopNav'
 import Footer from './Footer'

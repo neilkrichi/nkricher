@@ -35,7 +35,7 @@ export default class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.name === '' || this.state.message === '' || this.state.email === '') {
+    if (this.state.name === '' || this.state.message === '' || this.state.email === '' || this.state.emailError === 'Please enter a valid email address') {
       this.setState({emptyFieldError: 'All field are required.', successMessage: ''})
     }
     else {
