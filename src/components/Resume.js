@@ -4,7 +4,7 @@ import ReactPDF from 'react-pdf'
 import TopNav from './TopNav'
 import Footer from './Footer'
 import '../stylesheets/App.css'
-import resume from '../resumev4.pdf'
+import resume from '../resumev5.pdf'
 
 export default class Resume extends Component {
 

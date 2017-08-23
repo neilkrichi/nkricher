@@ -68,7 +68,6 @@ export default class TopNav extends Component {
           </div>
           <div className='site-map'>
             <ul className='navbar-list'>
-              <Link to='/about'><li>About</li></Link>
               <Link to='/projects'><li>Projects</li></Link>
               <Link to='/resume'><li>Resume</li></Link>
               <Link to='/contact'><li>Contact</li></Link>
