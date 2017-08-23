@@ -40,10 +40,10 @@ export default class ContactForm extends Component {
 
       const { name, email, message } = this.state;
 
-      axios.post('/api/posts', {
-        name: name,
-        email: email,
-        message: message})
+      axios.post('http://reduxblog.herokuapp.com/api/posts?key=neil1234', {
+        title: name,
+        categories: email,
+        content: message})
       .then((response) => {
         console.log(response)
       });
