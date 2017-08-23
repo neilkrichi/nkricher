@@ -30,7 +30,6 @@ export default class TopNav extends Component {
     return(
       <div className='open'>
           <ul className='navbar-list navbar-list-mobile'>
-            <Link to='/about'><li>About</li></Link>
             <Link to='/projects'><li>Projects</li></Link>
             <Link to='/resume'><li>Resume</li></Link>
             <Link to='/contact'><li>Contact</li></Link>

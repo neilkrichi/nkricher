@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 export default class ContactForm extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -35,11 +35,22 @@ export default class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.name === '' || this.state.message === '' || this.state.email === '' || this.state.emailError === 'Please enter a valid email address') {
-      this.setState({emptyFieldError: 'All field are required.', successMessage: ''})
+    if (this.state.name !== '' && this.state.message !== '' && this.state.email !== '' && this.state.emailError !== 'Please enter a valid email address') {
+      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', message: ''});
+
+      const { name, email, message } = this.state;
+
+      axios.post('/api/posts', {
+        name: name,
+        email: email,
+        message: message})
+      .then((response) => {
+        console.log(response)
+      });
+
     }
     else {
-      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', message: ''});
+      this.setState({emptyFieldError: 'All field are required.', successMessage: ''});
     }
   }
 
@@ -80,7 +91,7 @@ export default class ContactForm extends Component {
         </div>
         <button type="submit" className='submit-form' onClick={this.handleSubmit}>Send</button>
         <br/> <span className='error-message'>{this.state.emptyFieldError}</span>
-         <span className='success-message'>{this.state.successMessage}</span>
+        <span className='success-message'>{this.state.successMessage}</span>
       </form>
     )
   }
