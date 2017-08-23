@@ -7,7 +7,7 @@ export default class ContactForm extends Component {
     this.state = {
       name: '',
       email: '',
-      message: '',
+      content: '',
       emailError: '',
       emptyFieldError: '',
       successMessage: ''
@@ -29,25 +29,34 @@ export default class ContactForm extends Component {
     }
   }
 
+  postEmail() {
+
+      let emailData = {
+        title: this.state.name,
+        categories: this.state.email,
+        content: this.state.content,
+      }
+
+      // pass the actual values to make this POST CALL
+      return axios.post('https://reduxblog.herokuapp.com/api/posts?key=neilskey1234', emailData)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+  }
+
   handleInputChange(event) {
     this.setState({[event.target.name]: event.target.value});
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.name !== '' && this.state.message !== '' && this.state.email !== '' && this.state.emailError !== 'Please enter a valid email address') {
-      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', message: ''});
-
-      const { name, email, message } = this.state;
-
-      axios.post('http://reduxblog.herokuapp.com/api/posts?key=neil1234', {
-        title: name,
-        categories: email,
-        content: message})
-      .then((response) => {
-        console.log(response)
-      });
-
+    if (this.state.name !== '' && this.state.content !== '' && this.state.email !== '' && this.state.emailError !== 'Please enter a valid email address') {
+      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', content: ''});
+      this.postEmail();
     }
     else {
       this.setState({emptyFieldError: 'All field are required.', successMessage: ''});
@@ -83,8 +92,8 @@ export default class ContactForm extends Component {
           <label>Your message</label><br/>
           <textarea
             type='text'
-            name='message'
-            value={this.state.message}
+            name='content'
+            value={this.state.content}
             placeholder=''
             onChange={this.handleInputChange}
             />
