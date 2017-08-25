@@ -268,11 +268,11 @@
   font-size: 1.2em;
 }
 
-.projects-row .col {
+.projects-row .box {
   height: 340px;
 }
 
-.projects-row .col {
+.projects-row .box {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 25px;
@@ -280,17 +280,16 @@
 }
 
 .projects-row .first-item {
-  border: 1px solid blue;
   background-image: url('../Surflifelogo.png');
   position:relative;
 }
 
-.first-item > *{
+.box > *{
     position:relative;
     z-index:1;
 }
 
-.first-item .surflife {
+.box .project-name {
   opacity:0;
   color: white;
   text-align: center;
@@ -298,12 +297,12 @@
   z-index: 100;
 }
 
-.first-item:hover .surflife {
+.box:hover .project-name {
   opacity: 1;
 }
 
 
-.first-item:before{
+.box:before{
     content:'';
     position:absolute;
     top:0;
@@ -316,7 +315,7 @@
 
 }
 
-.first-item:after {
+.box:after {
     content:'';
     color:#fff;
     position:absolute;
@@ -328,36 +327,39 @@
     -webkit-transition: all 0.5s;
 }
 
-.first-item:hover:before{
+.box:hover:before{
   opacity:.6;
   transition: all 0.5s;
 }
 
-.first-item:hover:after {
+.box:hover:after {
     opacity:1;
     z-index: 10;
 }
 
 .projects-row .second-item {
-  border: 1px solid red;
   background-image: url('../roastrlogo.png');
+  position:relative;
 }
 
 .projects-row .third-item {
-  border: 1px solid green;
   background-image: url('../tmteamlogo.png');
+  position:relative;
 }
 
 .projects-row .fourth-item {
   border: 1px solid yellow;
+  position:relative;
 }
 
 .projects-row .fifth-item {
   border: 1px solid black;
+  position:relative;
 }
 
 .projects-row .sixth-item {
   border: 1px solid violet;
+  position:relative;
 }
 
 .projects-page .projects-row {
@@ -391,6 +393,10 @@
     display: none !important;
   }
 
+  .projects-page {
+    padding: 20px;
+  }
+
   .projects-page .about-me h1 {
     font-size: 2em;
     font-weight: 600;
@@ -398,8 +404,13 @@
     letter-spacing: -0.035em;
   }
 
-  .projects-row .col {
-    width: 40%;
+  .projects-page .about-me p {
+    font-size: 1.2em;
+    margin: 10px 0px;
+  }
+
+  .projects-row .box {
+    width: 46%;
     margin-bottom: 15px;
   }
 
@@ -447,10 +458,19 @@
     display: none !important;
   }
 
-  .projects-row .col {
-    width: 80%;
+  .projects-page {
+    padding: 40px 0px 20px 0px;
+  }
+
+  .projects-row .box {
+    width: 85%;
     height: 350px;
     margin-bottom: 25px;
+  }
+
+  .projects-page .about-me {
+    padding: 10px 40px 0px 40px;
+    color: #585858;
   }
 
   .footer .fa-socials .fa {

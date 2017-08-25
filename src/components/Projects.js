@@ -16,24 +16,24 @@ export default class Projects extends Component {
             <p>I enjoy solving tough problems and creating delightful, intuitive designs and interfaces. </p>
           </div>
           <div className="projects-row">
-            <div className="col first-item">
-              <h2 className="surflife">Surflife</h2>
+            <div className="box first-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
-            <div className="col second-item">
-              Box 2
+            <div className="box second-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
-            <div className="col third-item">
-              Box 3
+            <div className="box third-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
-            <div className="col fourth-item">
-              Box 4
+            <div className="box fourth-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
 
-            <div className="col fifth-item">
-              Box 5
+            <div className="box fifth-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
-            <div className="col sixth-item">
-              Box 6
+            <div className="box sixth-item">
+              <h2 className="project-name">Surflife</h2>
             </div>
           </div>
         </div>
