@@ -282,6 +282,60 @@
 .projects-row .first-item {
   border: 1px solid blue;
   background-image: url('../Surflifelogo.png');
+  position:relative;
+}
+
+.first-item > *{
+    position:relative;
+    z-index:1;
+}
+
+.first-item .surflife {
+  opacity:0;
+  color: white;
+  text-align: center;
+  top: 40%;
+  z-index: 100;
+}
+
+.first-item:hover .surflife {
+  opacity: 1;
+}
+
+
+.first-item:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:black;
+    opacity:0;
+    z-index:0;
+
+}
+
+.first-item:after {
+    content:'';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.first-item:hover:before{
+  opacity:.6;
+  transition: all 0.5s;
+}
+
+.first-item:hover:after {
+    opacity:1;
+    z-index: 10;
 }
 
 .projects-row .second-item {
