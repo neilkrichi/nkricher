@@ -279,26 +279,43 @@
   width: 31%;
 }
 
-.projects-row .first-item {
-  background-image: url('../Surflifelogo.png');
-  position:relative;
-}
-
 .box > *{
     position:relative;
     z-index:1;
 }
 
 .box .project-name {
-  opacity:0;
+  opacity:1;
   color: white;
   text-align: center;
-  top: 40%;
+  z-index: 100;
+  margin: 0px;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.box .content {
+  top: 43%;
+}
+
+.box:hover .content {
+  top: 35%;
+  transition: all 0.3s;
   z-index: 100;
 }
 
-.box:hover .project-name {
+.box .project-details {
+  opacity:0;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.box:hover .project-details {
   opacity: 1;
+  transition: all 0.5s;
 }
 
 
@@ -310,7 +327,7 @@
     right:0;
     bottom:0;
     background:black;
-    opacity:0;
+    opacity:0.2;
     z-index:0;
 
 }
@@ -328,37 +345,41 @@
 }
 
 .box:hover:before{
-  opacity:.6;
+  opacity: 0.2;
   transition: all 0.5s;
 }
 
+.projects-row .first-item {
+  background-color: #ff2f4e;
+  position:relative;
+}
+
 .box:hover:after {
-    opacity:1;
+    opacity: 1;
     z-index: 10;
 }
 
 .projects-row .second-item {
-  background-image: url('../roastrlogo.png');
+  background-color: #702800;
   position:relative;
 }
 
 .projects-row .third-item {
-  background-image: url('../tmteamlogo.png');
+  background-color: #ffe4ca;
   position:relative;
 }
 
 .projects-row .fourth-item {
-  border: 1px solid yellow;
+  background-color: #342570;
   position:relative;
 }
 
 .projects-row .fifth-item {
-  border: 1px solid black;
+  background-color: #05DACF;
   position:relative;
 }
 
 .projects-row .sixth-item {
-  border: 1px solid violet;
   position:relative;
 }
 

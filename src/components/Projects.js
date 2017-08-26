@@ -17,29 +17,62 @@ export default class Projects extends Component {
           </div>
           <div className="projects-row">
             <div className="box first-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">Surflife</h2>
+                <div className="project-details">
+                  <p>Front-End Development</p>
+                </div>
+              </div>
             </div>
             <div className="box second-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">Roastr</h2>
+                <div className="project-details">
+                  <p>Product Design • Front-End Development</p>
+                </div>
+              </div>
             </div>
             <div className="box third-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">What Are Those?</h2>
+                <div className="project-details">
+                  <div className="project-details">
+                    <p>Product Design • Mobile Development</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="box fourth-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">TrackMyTeam</h2>
+                <div className="project-details">
+                  <p>Product design • Front-End Development</p>
+                </div>
+              </div>
             </div>
-
             <div className="box fifth-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">Forecast 5</h2>
+                <div className="project-details">
+                  <p>Front-End Development</p>
+                </div>
+              </div>
             </div>
             <div className="box sixth-item">
-              <h2 className="project-name">Surflife</h2>
+              <div className="content">
+                <h2 className="project-name">Lorem Ipsum</h2>
+                <div className="project-details">
+                  <div className="project-details">
+                    <p>Product Design • Mobile Development</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
 
-    )
+      )
+    }
   }
-}
