@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link, browserHistory } from 'react-router'
 import TopNav from './TopNav'
 import Footer from './Footer'
 import '../stylesheets/App.css'
@@ -16,40 +17,46 @@ export default class Projects extends Component {
             <p>I enjoy solving tough problems and creating delightful, intuitive designs and interfaces. </p>
           </div>
           <div className="projects-row">
-            <div className="box first-item">
-              <div className="content">
-                <h2 className="project-name">Surflife</h2>
-                <div className="project-details">
-                  <p>Front-End Development</p>
-                </div>
-              </div>
-            </div>
-            <div className="box second-item">
-              <div className="content">
-                <h2 className="project-name">Roastr</h2>
-                <div className="project-details">
-                  <p>Product Design • Front-End Development</p>
-                </div>
-              </div>
-            </div>
-            <div className="box third-item">
-              <div className="content">
-                <h2 className="project-name">What Are Those?</h2>
-                <div className="project-details">
+
+              <div className="box first-item">
+                <div className="content">
+                  <h2 className="project-name">Surflife</h2>
                   <div className="project-details">
-                    <p>Product Design • Mobile Development</p>
+                    <p>Front-End Development</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="box fourth-item">
-              <div className="content">
-                <h2 className="project-name">TrackMyTeam</h2>
-                <div className="project-details">
-                  <p>Product design • Front-End Development</p>
+
+              <div className="box second-item">
+                <div className="content">
+                  <h2 className="project-name">Roastr</h2>
+                  <div className="project-details">
+                    <p>Product Design • Front-End Development</p>
+                    <Link to='http://roastrr.herokuapp.com' target='_blank'><button className="cta-button">Take a look</button></Link>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div className="box third-item">
+                <div className="content">
+                  <h2 className="project-name">What Are Those?</h2>
+                  <div className="project-details">
+                    <div className="project-details">
+                      <p>Product Design • Mobile Development</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="box fourth-item">
+                <div className="content">
+                  <h2 className="project-name">TrackMyTeam</h2>
+                  <div className="project-details">
+                    <p>Product design • Front-End Development</p>
+                  </div>
+                </div>
+              </div>
+
             <div className="box fifth-item">
               <div className="content">
                 <h2 className="project-name">Forecast 5</h2>
@@ -58,6 +65,7 @@ export default class Projects extends Component {
                 </div>
               </div>
             </div>
+
             <div className="box sixth-item">
               <div className="content">
                 <h2 className="project-name">Lorem Ipsum</h2>
