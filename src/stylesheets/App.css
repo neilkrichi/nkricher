@@ -127,6 +127,11 @@
   padding: 8px 3px;
   font-size: 14px;
   margin: 0px;
+  outline: none;
+}
+
+.projects-page .cta-button:hover {
+  cursor: pointer;
 }
 
 .contact-page h1 {
@@ -287,6 +292,11 @@
 
 .projects-row .box {
   height: 340px;
+  border-radius: 3px;
+}
+
+.projects-row .box:hover {
+  cursor: pointer;
 }
 
 .projects-row .box {
@@ -307,10 +317,6 @@
   text-align: center;
   z-index: 100;
   margin: 0px;
-}
-
-.box:hover {
-  cursor: pointer;
 }
 
 .box .content {
@@ -337,6 +343,7 @@
 
 
 .box:before{
+    border-radius: 3px;
     content:'';
     position:absolute;
     top:0;
@@ -462,6 +469,7 @@
   .projects-row .box {
     width: 46%;
     margin-bottom: 15px;
+    border-radius: 3px;
   }
 
   .contact-page .contact-form {
@@ -516,6 +524,7 @@
     width: 85%;
     height: 350px;
     margin-bottom: 25px;
+    border-radius: 3px;
   }
 
   .projects-page .about-me {

@@ -18,26 +18,25 @@ export default class Projects extends Component {
           </div>
           <div className="projects-row">
 
-              <div className="box first-item">
-                <div className="content">
-                  <h2 className="project-name">Surflife</h2>
-                  <div className="project-details">
-                    <p>Front-End Development</p>
+                <div className="box first-item" onClick={()=>window.open('http://www.heroku.com', '_blank')}>
+                  <div className="content">
+                    <h2 className="project-name">Surflife</h2>
+                    <div className="project-details">
+                      <p>Front-End Development</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="box second-item">
+              <div className="box second-item" onClick={()=>window.open('http://roastrr.herokuapp.com', '_blank')}>
                 <div className="content">
                   <h2 className="project-name">Roastr</h2>
                   <div className="project-details">
                     <p>Product Design • Front-End Development</p>
-                    <Link to='http://roastrr.herokuapp.com' target='_blank'><button className="cta-button">Take a look</button></Link>
                   </div>
                 </div>
               </div>
 
-              <div className="box third-item">
+              <div className="box third-item" onClick={()=>window.open('http://heroku.com', '_blank')}>
                 <div className="content">
                   <h2 className="project-name">What Are Those?</h2>
                   <div className="project-details">
@@ -48,7 +47,7 @@ export default class Projects extends Component {
                 </div>
               </div>
 
-              <div className="box fourth-item">
+              <div className="box fourth-item" onClick={()=>window.open('http://tmteam.herokuapp.com', '_blank')}>
                 <div className="content">
                   <h2 className="project-name">TrackMyTeam</h2>
                   <div className="project-details">
@@ -57,7 +56,7 @@ export default class Projects extends Component {
                 </div>
               </div>
 
-            <div className="box fifth-item">
+            <div className="box fifth-item" onClick={()=>window.open('http://heroku.com', '_blank')}>
               <div className="content">
                 <h2 className="project-name">Forecast 5</h2>
                 <div className="project-details">
@@ -66,7 +65,7 @@ export default class Projects extends Component {
               </div>
             </div>
 
-            <div className="box sixth-item">
+            <div className="box sixth-item" onClick={()=>window.location.href = "mailto:neilkrichi@gmail.com?subject=Hi%20Neil"}>
               <div className="content">
                 <h2 className="project-name">Lorem Ipsum</h2>
                 <div className="project-details">
