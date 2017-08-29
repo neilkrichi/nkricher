@@ -36,7 +36,7 @@ export default class Projects extends Component {
                 </div>
               </div>
 
-              <div className="box third-item" onClick={()=>window.open('http://heroku.com', '_blank')}>
+              <div className="box third-item" onClick={()=>browserHistory.push('/watdog')}>
                 <div className="content">
                   <h2 className="project-name">What Are Those?</h2>
                   <div className="project-details">

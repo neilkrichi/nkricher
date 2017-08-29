@@ -482,7 +482,7 @@
   }
 
   .projects-page .about-me h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: -0.035em;
@@ -541,6 +541,14 @@
 @media only screen and (max-width: 736px) {
   .hide-xs {
     display: none !important;
+  }
+
+  .App .cta-button {
+    width: 50%
+  }
+
+  .App .app-intro {
+    font-size: 28px;
   }
 
   .resume-page .cta-button {

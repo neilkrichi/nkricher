@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
 import NoMatch from './components/NoMatch'
+import Watdog from './components/Watdog'
 
 import { Router, Route, browserHistory } from 'react-router'
 
@@ -15,6 +16,7 @@ ReactDOM.render((
   <Router history={browserHistory}>
   <Route path="/" component={Home} />
   <Route path="/projects" component={Projects} />
+  <Route path="/watdog" component={Watdog} />
   <Route path="/resume" component={Resume} />
   <Route path="/contact" component={Contact} />
   <Route path="*" component={NoMatch}/>
