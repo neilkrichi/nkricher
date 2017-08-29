@@ -18,7 +18,7 @@ export default class Projects extends Component {
           </div>
           <div className="projects-row">
 
-                <div className="box first-item" onClick={()=>window.open('http://www.heroku.com', '_blank')}>
+                <div className="box first-item" onClick={()=>window.open('http://www.gosurflife.com', '_blank')}>
                   <div className="content">
                     <h2 className="project-name">Surflife</h2>
                     <div className="project-details">
@@ -56,7 +56,7 @@ export default class Projects extends Component {
                 </div>
               </div>
 
-            <div className="box fifth-item" onClick={()=>window.open('http://heroku.com', '_blank')}>
+            <div className="box fifth-item" onClick={()=>window.open('http://forecast5.herokuapp.com', '_blank')}>
               <div className="content">
                 <h2 className="project-name">Forecast 5</h2>
                 <div className="project-details">
@@ -67,10 +67,10 @@ export default class Projects extends Component {
 
             <div className="box sixth-item" onClick={()=>window.location.href = "mailto:neilkrichi@gmail.com?subject=Hi%20Neil"}>
               <div className="content">
-                <h2 className="project-name">Lorem Ipsum</h2>
+                <h2 className="project-name">More?</h2>
                 <div className="project-details">
                   <div className="project-details">
-                    <p>Product Design • Mobile Development</p>
+                    <p>Drop me an email</p>
                   </div>
                 </div>
               </div>
