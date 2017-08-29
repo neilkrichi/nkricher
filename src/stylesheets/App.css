@@ -259,14 +259,33 @@
 .resume-page {
   text-align: center;
   margin: 0px auto;
+  padding: 20px 0px;
 }
 
 .resume {
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .resume > canvas {
   border: 1px solid black;
+}
+
+.resume-page .cta-button {
+  width: 15%;
+  color: #585858;
+  padding: 8px 0px;
+  margin: 8px 0;
+  border: 1px solid;
+  border-color: #585858;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.resume-page .cta-button:hover {
+  background: linear-gradient(216deg, #DA0B8F, #bb05b0, #b003bb);
+  color: white;
+  border-color: white;
 }
 
 .projects-page .about-me {
@@ -341,6 +360,9 @@
   transition: all 0.5s;
 }
 
+.box .project-details p {
+  margin: 10px;
+}
 
 .box:before{
     border-radius: 3px;
@@ -438,6 +460,11 @@
     display: none !important;
   }
 
+  .resume-page .cta-button {
+    width: 20%;
+    padding: 12px 0px;
+  }
+
   .topnav .site-map {
     float: right;
   }
@@ -514,6 +541,10 @@
 @media only screen and (max-width: 736px) {
   .hide-xs {
     display: none !important;
+  }
+
+  .resume-page .cta-button {
+    width: 27%;
   }
 
   .projects-page {
