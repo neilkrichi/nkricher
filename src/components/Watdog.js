@@ -8,7 +8,7 @@ export default class Watdog extends Component {
       <div className=''>
         <TopNav/>
         <div className='watdog-page'>
-          <h1>Watdog</h1>
+          <h1>Coming soon...</h1>
         </div>
         <Footer />
       </div>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Link, browserHistory } from 'react-router'
+import { browserHistory } from 'react-router'
+
+import FontAwesome from 'react-fontawesome'
 import TopNav from './TopNav'
 import Footer from './Footer'
 import '../stylesheets/App.css'
@@ -70,7 +72,7 @@ export default class Projects extends Component {
                 <h2 className="project-name">More?</h2>
                 <div className="project-details">
                   <div className="project-details">
-                    <p>Drop me an email</p>
+                    <p><FontAwesome className='' name='envelope-o' size='1x' />Drop me an email</p>
                   </div>
                 </div>
               </div>

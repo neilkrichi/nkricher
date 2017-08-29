@@ -203,6 +203,7 @@
 }
 
 .create-form .submit-form {
+  font-family: inherit;
   width: 40%;
   background-color: #1B1A1A;
   color: white;
@@ -249,7 +250,7 @@
 }
 
 .contact-page {
-  color: #585858;
+  color: #333333;
 }
 
 .projects-page {
@@ -272,14 +273,15 @@
 
 .resume-page .cta-button {
   width: 15%;
-  color: #585858;
+  color: #333333;
   padding: 8px 0px;
   margin: 8px 0;
   border: 1px solid;
-  border-color: #585858;
+  border-color: #333333;
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
+  outline: none;
 }
 
 .resume-page .cta-button:hover {
@@ -290,7 +292,7 @@
 
 .projects-page .about-me {
   padding: 0px 30px;
-  color: #585858;
+  color: #333333;
 }
 
 .projects-page .about-me h1 {
@@ -438,6 +440,17 @@
   padding: 20px 0px;
 }
 
+.no-match {
+  padding: 20px 40px;
+  height: 600px;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.watdog-page {
+  padding: 20px 40px;
+}
+
 /*FOR LARGE SCREENS ONLY*/
 
 @media only screen  and (min-width: 999px) {
@@ -578,7 +591,7 @@
 
   .projects-page .about-me {
     padding: 10px 40px 0px 40px;
-    color: #585858;
+    color: #333333;
   }
 
   .footer .fa-socials .fa {

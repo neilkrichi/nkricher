@@ -8,7 +8,7 @@ export default class NoMatch extends Component {
       <div className=''>
         <TopNav/>
         <div className='no-match'>
-          <h1>Oops, There doesn't seem to be anything here...</h1>
+          <h1>Oops, there doesn't seem to be anything here...</h1>
         </div>
         <Footer />
       </div>

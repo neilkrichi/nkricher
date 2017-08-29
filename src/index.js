@@ -21,4 +21,5 @@ ReactDOM.render((
   <Route path="/contact" component={Contact} />
   <Route path="*" component={NoMatch}/>
 </Router> ), document.getElementById('root'));
+
 registerServiceWorker();
