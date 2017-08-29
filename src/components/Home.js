@@ -17,7 +17,7 @@ export default class Home extends Component {
         <div className="intro">
           <h1>Hello, it's me.</h1> <br/>
           <h3 className="app-intro">
-            I'm Neil and I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> designer and developer.
+            My name is Neil and I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> designer and developer.
           </h3> <br/>
         <Link to='/projects'><button className="cta-button">Let's see what you've got, Neil.</button></Link>
         </div>

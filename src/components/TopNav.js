@@ -75,9 +75,9 @@ export default class TopNav extends Component {
           <div className="fa-socials hide-sm">
             <Link to='https://github.com/neilkrichi' target="_blank"><FontAwesome className="fa" name='github' size='2x' /></Link>
             <Link to='https://linkedin.com/in/neilkrichi' target="_blank"><FontAwesome className="fa" name='linkedin' size='2x' /></Link>
-            <Link to='https://instagram.com/nkricher' target="_blank"><FontAwesome className="fa" name='instagram' size='2x' /></Link>
             <Link to='https://behance.net/neilkrichi04ff' target="_blank"><FontAwesome className="fa" name='behance' size='2x' /></Link>
-          </div>
+            <Link to='https://instagram.com/nkricher' target="_blank"><FontAwesome className="fa" name='instagram' size='2x' /></Link>
+        </div>
         </div>
       </div>
     );

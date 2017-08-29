@@ -450,6 +450,10 @@
     padding: 30px 0px;
   }
 
+  .app-intro .react-typeout {
+    font-weight: 600;
+  }
+
 }
 
 /*--------------- End of large screens*/
@@ -534,6 +538,12 @@
 
 @media only screen  and (min-width: 736px) {
   .xs-only{
+    display: none !important;
+  }
+}
+
+@media only screen  and (min-width: 999px) {
+  .sm-only{
     display: none !important;
   }
 }
