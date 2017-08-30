@@ -263,6 +263,12 @@
   padding: 20px 0px;
 }
 
+.resume-page .resume-pic {
+  height: 65%;
+  width: 65%;
+  padding-top: 10px;
+}
+
 .resume {
   padding: 10px 0px;
 }
@@ -480,6 +486,12 @@
   .resume-page .cta-button {
     width: 20%;
     padding: 12px 0px;
+  }
+
+  .resume-page .resume-pic {
+    height: 85%;
+    width: 85%;
+    padding-top: 10px;
   }
 
   .topnav .site-map {
