@@ -264,8 +264,6 @@
 }
 
 .resume-page .resume-pic {
-  height: 65%;
-  width: 65%;
   padding-top: 10px;
 }
 
@@ -274,7 +272,7 @@
 }
 
 .resume > canvas {
-  border: 1px solid black;
+  border: 3px solid #585858;
 }
 
 .resume-page .cta-button {
@@ -329,8 +327,8 @@
 .projects-row .box {
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 25px;
-  width: 31%;
+  margin: 20px 15px;
+  flex: 30%;
 }
 
 .box > *{
@@ -522,11 +520,6 @@
     margin: 10px 0px;
   }
 
-  .projects-row .box {
-    width: 46%;
-    margin-bottom: 15px;
-    border-radius: 3px;
-  }
 
   .contact-page .contact-form {
     width: auto;
@@ -578,6 +571,10 @@
     display: none !important;
   }
 
+  .projects-row .box {
+    flex: 100%;
+  }
+
   .App .cta-button {
     width: 50%
   }
@@ -592,13 +589,6 @@
 
   .projects-page {
     padding: 40px 0px 20px 0px;
-  }
-
-  .projects-row .box {
-    width: 85%;
-    height: 350px;
-    margin-bottom: 25px;
-    border-radius: 3px;
   }
 
   .projects-page .about-me {

@@ -12,10 +12,10 @@ export default class Resume extends Component {
       <div>
         <TopNav />
         <div className='resume-page'>
-          <button className='cta-button' onClick={()=>window.open('http://bit.ly/2wE9JEI', '_blank')}>Download</button>
           <div className='resume'>
             <img className='resume-pic' src={resume} />
           </div>
+          <button className='cta-button' onClick={()=>window.open('http://bit.ly/2wE9JEI', '_blank')}>Download</button>
         </div>
         <Footer />
       </div>
