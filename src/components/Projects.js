@@ -40,7 +40,7 @@ export default class Projects extends Component {
 
               <div className="box third-item" onClick={()=>browserHistory.push('/watdog')}>
                 <div className="content">
-                  <h2 className="project-name">What Are Those?</h2>
+                  <h2 className="project-name">WatDog</h2>
                   <div className="project-details">
                     <div className="project-details">
                       <p>Product Design • Mobile Development</p>
