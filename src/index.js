@@ -22,13 +22,13 @@ function logPageView() {
 }
 
 ReactDOM.render((
-  <Router history={browserHistory}>
-  <Route path="/" component={Home} onUpdate={logPageView} />
-  <Route path="/projects" component={Projects} onUpdate={logPageView} />
-  <Route path="/watdog" component={Watdog} onUpdate={logPageView} />
-  <Route path="/resume" component={Resume} onUpdate={logPageView} />
-  <Route path="/contact" component={Contact} onUpdate={logPageView} />
-  <Route path="*" component={NoMatch}/>
+  <Router onUpdate={logPageView} history={browserHistory}>
+    <Route path="/" component={Home} onUpdate={logPageView} />
+    <Route path="/projects" component={Projects} onUpdate={logPageView} />
+    <Route path="/watdog" component={Watdog} onUpdate={logPageView} />
+    <Route path="/resume" component={Resume} onUpdate={logPageView} />
+    <Route path="/contact" component={Contact} onUpdate={logPageView} />
+    <Route path="*" component={NoMatch}/>
 </Router>
 ), document.getElementById('root'));
 
