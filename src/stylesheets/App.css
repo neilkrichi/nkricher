@@ -20,17 +20,17 @@
 
 
 .App .App-header {
-  background: #1B1A1A;
+  background: black;
   margin: 20px 100px;
   padding: 5px 10px;
-  color: white;
+  color: #1B1A1A;
   height: 80px;
   text-align: center;
 }
 
 .App-header {
   background: #1B1A1A;
-  padding: 5px 80px;
+  padding: 10px 80px;
   color: white;
   height: 80px;
   text-align: center;
@@ -71,7 +71,7 @@
 }
 
 .topnav a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
