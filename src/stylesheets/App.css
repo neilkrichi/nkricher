@@ -21,8 +21,8 @@
 
 .App .App-header {
   background: black;
-  margin: 20px 100px;
-  padding: 5px 10px;
+  margin: 20px 90px;
+  padding: 5px 20px;
   color: #1B1A1A;
   height: 80px;
   text-align: center;
@@ -71,7 +71,7 @@
 }
 
 .topnav a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
