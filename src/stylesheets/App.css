@@ -13,17 +13,24 @@
 }
 
 .App {
-  background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
-  height: 900px;
+  background: #fffffe;
+  height: 750px;
+  color: #1B1A1A;
 }
 
+
 .App .App-header {
-  background: transparent;
+  background: #1B1A1A;
+  margin: 20px 100px;
+  padding: 5px 10px;
+  color: white;
+  height: 80px;
+  text-align: center;
 }
 
 .App-header {
-  background: linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd);
-  padding: 10px 80px;
+  background: #1B1A1A;
+  padding: 5px 80px;
   color: white;
   height: 80px;
   text-align: center;
@@ -81,9 +88,9 @@
 }
 
 .intro {
-  height: 650px;
-  padding-top: 120px;
-  color: white;
+  height: 600px;
+  padding-top: 100px;
+  color: #1B1A1A;
 }
 
 .intro h1 {
@@ -95,19 +102,19 @@
 .cta-button {
   width: 30%;
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 12px 5px;
   margin: 8px 0;
-  border: 2px solid white;
+  border: 2px solid #1B1A1A;
   border-radius: 4px;
   font-size: 18px;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: white;
+  background-color: #1B1A1A;
   border: none;
-  color: black;
+  color: white;
 }
 
 .cta-button a {
@@ -118,9 +125,7 @@
   text-decoration: none;
 }
 
-.App .cta-button:hover {
-  color: #A100CD;
-}
+
 
 .projects-page .cta-button {
   width: 40%;
