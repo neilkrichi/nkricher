@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import TopNav from './TopNav'
 import Footer from './Footer'
 import '../stylesheets/App.css'
-import resume from '../resumev6.png'
+import resume from '../resumev7.png'
 
 export default class Resume extends Component {
 
