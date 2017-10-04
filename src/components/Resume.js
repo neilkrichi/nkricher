@@ -15,7 +15,7 @@ export default class Resume extends Component {
           <div className='resume'>
             <img className='resume-pic' src={resume} />
           </div>
-          <button className='cta-button' onClick={()=>window.open('http://bit.ly/2wE9JEI', '_blank')}>Download</button>
+          <button className='cta-button' onClick={()=>window.open('https://mcgill-my.sharepoint.com/personal/neil_krichi_mail_mcgill_ca/_layouts/15/guestaccess.aspx?docid=0dafbb07e6588427ea6b0c6bd2a8cc776&authkey=ASVDb_pJQ9OGqkCoSgdNGdw', '_blank')}>Download</button>
         </div>
         <Footer />
       </div>
