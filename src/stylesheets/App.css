@@ -265,6 +265,7 @@
 
 .resume-page .resume-pic {
   padding-top: 10px;
+  border: 1px black solid;
 }
 
 .resume {
