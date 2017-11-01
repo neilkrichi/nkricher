@@ -29,7 +29,6 @@ export default class Home extends Component {
           </h3> <br/>
         <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Let's see what you've got, Neil.</button></Link>
         </div>
-        <Footer />
       </div>
 
   );

@@ -20,7 +20,7 @@ export default class Contact extends Component {
             <div className='map-wrapper'><GoogleMap className='map' /></div>
             <div className='contact-details'>
               <p><strong>Tel:</strong> +1 (514) 834-6382 </p>
-              <p><strong>Email:</strong> <a href='mailto:neilkrichi@gmail.com'>neilkrichi@gmail.com</a></p>
+              <p><strong>Email:</strong> <a href='mailto:neil.krichi@gmail.com'>neilkrichi@gmail.com</a></p>
               <p><strong>Skype:</strong> neil.krichi</p>
               <p><strong>Address:</strong> 225 W. 8th Ave #300, Vancouver, BC V5Y 1N3</p>
             </div>

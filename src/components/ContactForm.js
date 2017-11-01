@@ -8,6 +8,7 @@ export default class ContactForm extends Component {
       name: '',
       email: '',
       content: '',
+      date: '',
       emailError: '',
       emptyFieldError: '',
       successMessage: ''
@@ -16,6 +17,13 @@ export default class ContactForm extends Component {
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.validateEmail = this.validateEmail.bind(this)
+  }
+
+  getCurrentDate(){
+    let dt = new Date()
+    let utcDt = dt.toUTCString()
+
+    return utcDt
   }
 
   validateEmail(){
@@ -37,8 +45,10 @@ export default class ContactForm extends Component {
         content: this.state.content,
       }
 
+      let stuff = [emailData, this.getCurrentDate()]
+
       // pass the actual values to make this POST CALL
-      return axios.post('https://reduxblog.herokuapp.com/api/posts?key=neilskey1234', emailData)
+      return axios.post('https://reduxblog.herokuapp.com/api/posts?key=neilskey1234', stuff)
       .then((response) => {
         console.log(response);
       })
