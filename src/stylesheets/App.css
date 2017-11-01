@@ -13,8 +13,8 @@
 }
 
 .App {
-  background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
-  height: 900px;
+  background: #ccc; /* linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
+  height: 800px;
 }
 
 .App .App-header {
@@ -45,6 +45,9 @@
 
 .app-intro {
   font-weight: normal;
+}
+
+.avatar-pic {
 }
 
 .topnav ul {
@@ -81,13 +84,23 @@
 }
 
 .intro {
-  height: 650px;
-  padding-top: 120px;
+  padding: 100px 100px 60px 100px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.intro h1 {
-  font-size: 48px;
+.intro .intro-text {
+  padding: 0px 55px;
+}
+
+.intro .intro-pic {
+
+}
+
+.intro-text h1 {
+  font-size: 46px;
   margin-left: 0px;
   font-weight: 500;
 }
