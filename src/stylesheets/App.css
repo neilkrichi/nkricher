@@ -13,16 +13,21 @@
 }
 
 .App {
-  background: #ccc; /* linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
-  height: 800px;
+  background: rgb(93, 134, 187); /* linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
+  height: 780px;
 }
 
 .App .App-header {
   background: transparent;
 }
 
+.intro .avatar {
+  padding: 0px 40px;
+}
+
 .App-header {
-  background: linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd);
+  background-color: #1B1A1A;
+  /* background: linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
   padding: 10px 80px;
   color: white;
   height: 80px;
@@ -84,7 +89,7 @@
 }
 
 .intro {
-  padding: 100px 100px 60px 100px;
+  padding: 80px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -92,7 +97,7 @@
 }
 
 .intro .intro-text {
-  padding: 0px 55px;
+  padding: 0px 40px;
 }
 
 .intro .intro-pic {
@@ -132,7 +137,7 @@
 }
 
 .App .cta-button:hover {
-  color: #A100CD;
+  color: rgb(93, 134, 187);
 }
 
 .projects-page .cta-button {
@@ -514,6 +519,24 @@
     padding: 7px 0px;
   }
 
+  .intro {
+    flex-direction: column;
+    padding: 40px 0px 0px 0px;
+  }
+
+  .intro .avatar-pic {
+    width: 200px;
+    height: auto;
+  }
+
+  .intro h1 {
+    margin-bottom: 0px;
+  }
+
+  .intro h3 {
+    margin-top: 0px;
+  }
+
   .App-header {
     padding: 10px 60px;
   }
@@ -643,7 +666,8 @@
   .topnav ul li {
     display: block;
     padding: 10px 10px;
-    background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA);
+    background-color: #1B1A1A;
+    /* background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA); */
     margin: 0px;
     font-size: 1.3em;
     clear: both;

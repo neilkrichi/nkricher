@@ -24,17 +24,17 @@ export default class Home extends Component {
       <div className="App">
         <TopNav />
         <div className="intro">
-          <div>
+          <div className='avatar'>
             <img className='avatar-pic' src={avatar} />
           </div>
           <div className='intro-text'>
             <h1>Hello, it's me.</h1> <br/>
             <h3 className="app-intro">
               My name is Neil and I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> designer and developer.
-            </h3> <br/>
+            </h3>
           </div>
         </div>
-        <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Let's see what you've got, Neil.</button></Link>
+        <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my work.</button></Link>
       </div>
 
   );
