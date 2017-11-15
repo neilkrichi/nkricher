@@ -471,7 +471,9 @@
 }
 
 .watdog-page {
-  padding: 20px 40px;
+  padding: 20px 0px;
+  height: 650px;
+  text-align: center;
 }
 
 /*FOR LARGE SCREENS ONLY*/
