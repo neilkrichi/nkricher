@@ -14,7 +14,11 @@
 
 .App {
   background: rgb(93, 134, 187); /* linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
-  height: 780px;
+  height:auto;
+}
+
+.App .cta-button {
+  margin-bottom: 100px;
 }
 
 .App .App-header {
@@ -89,7 +93,7 @@
 }
 
 .intro {
-  padding: 100px 80px 80px 80px;
+  padding: 80px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -615,7 +619,7 @@
   }
 
   .App .cta-button {
-    width: 50%
+    width: 50%;
   }
 
   .App .app-intro {
