@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Myriad Pro, Open Sans, Helvetica Neue, sans-serif;
+}
+
 .App-logo {
   height: 70px;
   padding: 7px 30px;
@@ -110,7 +116,7 @@
 
 
 .intro-text p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .cta-button {
@@ -424,7 +430,7 @@
 }
 
 .projects-row .item {
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: #222;
   position:relative;
 }
 
