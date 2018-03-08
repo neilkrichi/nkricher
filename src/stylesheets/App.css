@@ -93,7 +93,7 @@
 }
 
 .intro {
-  padding: 80px;
+  padding: 50px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -101,17 +101,16 @@
 }
 
 .intro .intro-text {
-  padding: 0px 40px;
+  padding: 40px;
 }
 
 .intro .intro-pic {
 
 }
 
-.intro-text h1 {
-  font-size: 46px;
-  margin-left: 0px;
-  font-weight: 500;
+
+.intro-text p {
+  font-size: 18px;
 }
 
 .cta-button {
@@ -424,8 +423,8 @@
   transition: all 0.5s;
 }
 
-.projects-row .first-item {
-  background-color: #ff2f4e;
+.projects-row .item {
+  background-color: rgba(20, 20, 20, 0.5);
   position:relative;
 }
 
@@ -434,29 +433,6 @@
     z-index: 10;
 }
 
-.projects-row .second-item {
-  background-color: #4F1C00;
-  position:relative;
-}
-
-.projects-row .third-item {
-  background-color: #FFEFC9;
-  position:relative;
-}
-
-.projects-row .fourth-item {
-  background-color: #342570;
-  position:relative;
-}
-
-.projects-row .fifth-item {
-  background-color: #00DA98;
-  position:relative;
-}
-
-.projects-row .sixth-item {
-  position:relative;
-}
 
 .projects-page .projects-row {
   display: flex;

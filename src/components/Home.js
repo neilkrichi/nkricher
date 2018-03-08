@@ -28,10 +28,10 @@ export default class Home extends Component {
             <img className='avatar-pic' src={avatar} />
           </div>
           <div className='intro-text'>
-            <h1>Hello, it's me.</h1> <br/>
             <h3 className="app-intro">
-              My name is Neil and I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> designer and developer.
+              My name is Neil Krichi.
             </h3>
+            <p className='description'>I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> front-end developer, and lifelong autodidact.</p>
           </div>
         </div>
         <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my work.</button></Link>
