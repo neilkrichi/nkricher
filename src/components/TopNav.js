@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 import { Link } from 'react-router'
-import firstlogo from '../favicon.png'
-import secondlogo from '../NKlogov2.png'
+import firstlogo from '../assets/favicon.png'
+import secondlogo from '../assets/NKlogov2.png'
 import '../stylesheets/App.css';
 
 

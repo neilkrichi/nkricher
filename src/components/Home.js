@@ -6,7 +6,7 @@ import ReactGA from 'react-ga'
 import TopNav from './TopNav'
 import Footer from './Footer'
 import '../stylesheets/App.css';
-import avatar from '../NKavatar.png'
+import avatar from '../assets/NKavatar.png'
 
 const words = ['Creative', 'Enthusiastic', 'Adventurous', 'Passionate'];
 
