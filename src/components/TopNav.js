@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 import { Link } from 'react-router'
-import firstlogo from '../assets/favicon.png'
+import firstlogo from '../assets/homelogo.png'
 import secondlogo from '../assets/NKlogov2.png'
 import '../stylesheets/App.css';
 
@@ -29,13 +29,11 @@ export default class TopNav extends Component {
 
   renderOpen(){
     return(
-      <div className='open'>
           <ul className='navbar-list navbar-list-mobile'>
             <Link to='/projects'><li>Projects</li></Link>
-            <Link to='/resume'><li>Resume</li></Link>
+            <Link to='/resume'><li id='no-border'>Resume</li></Link>
             <Link to='/contact'><li>Contact</li></Link>
           </ul>
-      </div>
     )
   }
 
