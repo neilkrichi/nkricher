@@ -189,6 +189,11 @@ body {
   cursor: pointer;
 }
 
+.projects-page .woman-emoji {
+  border-bottom: 0.5px dotted black;
+  cursor: pointer
+}
+
 .contact-page h1 {
   font-size: 2.75em;
   font-weight: 600;

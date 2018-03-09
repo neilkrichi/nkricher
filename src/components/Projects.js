@@ -15,8 +15,8 @@ export default class Projects extends Component {
         <TopNav />
         <div className='projects-page'>
           <div className='about-me'>
-            <h1>Hi guys. I'm Neil, Front-End developer and Product designer currently living in Vancouver, <span> 🇨🇦</span>.</h1>
-            <p>I enjoy solving tough problems and creating delightful and intuitive designs and interfaces. </p>
+            <h2>Hi! I'm Neil, and I'm a Front-End developer based out of Vancouver, BC.</h2>
+            <p>I like ☕️, 🐶, and <span className='woman-emoji' onClick={()=>window.open('http://www.instagram.com/thelilfit', '_blank')}> 🤷🏻‍♀️ </span> </p>
           </div>
           <div className="projects-row">
 
