@@ -19,7 +19,7 @@ body {
 }
 
 .App {
-  background: rgb(93, 134, 187); /* linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
+  /* background: rgb(93, 134, 187);  linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
   height:auto;
 }
 
@@ -29,6 +29,14 @@ body {
 
 .App .App-header {
   background: transparent;
+}
+
+.App .round-logo {
+  display: none;
+}
+
+.App .topnav a {
+  color: black;
 }
 
 .intro .avatar {
@@ -65,6 +73,18 @@ body {
 .avatar-pic {
 }
 
+.App .topnav .black-logo {
+  display: block;
+}
+
+.App .topnav .burger-menu {
+  color: black;
+}
+
+.topnav .black-logo {
+  display: none;
+}
+
 .topnav ul {
   margin: 0px;
   padding: 30px 0px;
@@ -99,8 +119,7 @@ body {
 }
 
 .intro {
-  padding: 50px;
-  color: white;
+  padding: 100px 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,17 +141,17 @@ body {
 .cta-button {
   width: 30%;
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 12px 5px;
   margin: 8px 0;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 4px;
   font-size: 18px;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: white;
+  background-color: black;
   border: none;
   color: black;
 }
@@ -646,6 +665,7 @@ body {
     background: transparent;
     border: 1px solid rgba(245, 245, 245, 0.3);
   }
+
   .topnav ul {
     padding: 0px;
     text-align: center;

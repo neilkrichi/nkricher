@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome'
 import { Link } from 'react-router'
-import logo from '../NKlogov2.png'
+import firstlogo from '../favicon.png'
+import secondlogo from '../NKlogov2.png'
 import '../stylesheets/App.css';
 
 
@@ -55,7 +56,8 @@ export default class TopNav extends Component {
     return (
       <div className='topnav'>
         <div className='App-header xs-only'>
-          <Link to='/'><img src={logo} className="App-logo pull-left" alt="logo" /></Link>
+          <Link to='/'><img src={firstlogo} className="App-logo pull-left black-logo" alt="logo" /></Link>
+          <Link to='/'><img src={secondlogo} className="App-logo pull-left round-logo" alt="logo" /></Link>
           <FontAwesome onClick={this.togglePopup.bind(this)} className="fa pull-right burger-menu" name={this.renderBurgerIcon()} size='2x' />
         </div>
         <div className='xs-only'>
@@ -63,7 +65,8 @@ export default class TopNav extends Component {
         </div>
         <div className="App-header hide-xs">
           <div className='logo-img'>
-            <Link to='/'> <img src={logo} className="App-logo" alt="logo" /> </Link>
+            <Link to='/'><img src={firstlogo} className="App-logo pull-left black-logo" alt="logo" /></Link>
+            <Link to='/'> <img src={secondlogo} className="App-logo round-logo" alt="logo" /> </Link>
           </div>
           <div className='site-map'>
             <ul className='navbar-list'>

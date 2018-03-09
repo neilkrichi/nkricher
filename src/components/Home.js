@@ -8,7 +8,7 @@ import Footer from './Footer'
 import '../stylesheets/App.css';
 import avatar from '../NKavatar.png'
 
-const words = [' creative', 'n enthusiastic', 'n adventurous', ' passionate'];
+const words = ['Creative', 'Enthusiastic', 'Adventurous', 'Passionate'];
 
 
 export default class Home extends Component {
@@ -31,10 +31,10 @@ export default class Home extends Component {
             <h3 className="app-intro">
               My name is Neil Krichi.
             </h3>
-            <p className='description'>I am a<span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> front-end developer and autodidact.</p>
+            <p className='description'><span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> Front-End Developer and Lifelong Learner.</p>
           </div>
         </div>
-        <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my work.</button></Link>
+        <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my work</button></Link>
         <Footer />
       </div>
 
