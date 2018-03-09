@@ -3,13 +3,13 @@ import React, { Component } from "react";
 export default class GoogleMap extends Component {
   componentDidMount() {
     var center = {lat: 49.273 ,lng: -123.1206178 }
-    var sgenius = {lat: 49.2638865, lng: -123.1101035 };
+    var home = {lat: 49.233, lng: -123.112 };
     var map =  new window.google.maps.Map(this.refs.map, {
       zoom: 13,
-      center: center
+      center: home
     });
     var marker = new window.google.maps.Marker({
-      position: sgenius ,
+      position: home ,
       map: map
     });
   }
