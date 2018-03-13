@@ -34,7 +34,7 @@ export default class Home extends Component {
             <p className='description'><span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> Front-End Developer and Lifelong Learner.</p>
           </div>
         </div>
-        <Link to='/projects'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my work</button></Link>
+        <Link to='/resume'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my resume</button></Link>
         <Footer />
       </div>
 

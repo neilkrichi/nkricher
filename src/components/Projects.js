@@ -20,59 +20,59 @@ export default class Projects extends Component {
           </div>
           <div className="projects-row">
 
-                <div className="box item" onClick={()=>window.open('http://www.gosurflife.com', '_blank')}>
-                  <div className="content">
-                    <h2 className="project-name">Surflife</h2>
-                    <div className="project-details">
-                      <p>Online community for Water Sports Enthusiasts.</p>
-                      <p>UI Design • Front-End Development</p>
-                      <p>HTML, CSS, Javascript (Meteor.js, React.js), Redux</p>
-                    </div>
-                  </div>
+            <div className="box item" onClick={()=>window.open('http://www.gosurflife.com', '_blank')}>
+              <div className="content">
+                <h2 className="project-name">Surflife</h2>
+                <div className="project-details">
+                  <p className="descrip">Online community for Water Sports Enthusiasts.</p>
+                  <p className="role">UI Design • Front-End Development</p>
+                  <p className="stack">HTML, CSS, Javascript (Meteor.js, React.js), Redux</p>
                 </div>
+              </div>
+            </div>
 
-              <div className="box item" onClick={()=>window.open('http://roastrr.herokuapp.com', '_blank')}>
-                <div className="content">
-                  <h2 className="project-name">Roastr</h2>
+            <div className="box item" onClick={()=>window.open('http://tmteam.herokuapp.com', '_blank')}>
+              <div className="content">
+                <h2 className="project-name">TrackMyTeam</h2>
+                <div className="project-details">
+                  <p className="description">Athletic Management Software Platform.</p>
+                  <p className="role">Product Design • Front-End Development</p>
+                  <p className="stack">HTML, CSS, Twitter Bootstrap, Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="box item" onClick={()=>browserHistory.push('/vision')}>
+              <div className="content">
+                <h2 className="project-name">Vision</h2>
+                <div className="project-details">
                   <div className="project-details">
-                    <p>Online Coffee Marketplace.</p>
-                    <p>Product Design • Front-End Development</p>
-                    <p>(HTML, CSS, Javascript - React.js)</p>
+                    <p className="descrip">Image Recognition App.</p>
+                    <p className="role">Product Design • Mobile Development</p>
+                    <p className="stack">React Native</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="box item" onClick={()=>browserHistory.push('/watdog')}>
-                <div className="content">
-                  <h2 className="project-name">Vision</h2>
-                  <div className="project-details">
-                    <div className="project-details">
-                      <p>Image Recognition App.</p>
-                      <p>Product Design • Mobile Development</p>
-                      <p>React Native</p>
-                    </div>
-                  </div>
+            <div className="box item" onClick={()=>window.open('http://roastrr.herokuapp.com', '_blank')}>
+              <div className="content">
+                <h2 className="project-name">Roastr</h2>
+                <div className="project-details">
+                  <p className="descrip">Online Coffee Marketplace.</p>
+                  <p className="role">Product Design • Front-End Development</p>
+                  <p className="stack">HTML, CSS, Javascript - React.js</p>
                 </div>
               </div>
-
-              <div className="box item" onClick={()=>window.open('http://tmteam.herokuapp.com', '_blank')}>
-                <div className="content">
-                  <h2 className="project-name">TrackMyTeam</h2>
-                  <div className="project-details">
-                    <p>Athletic Management Software Platform.</p>
-                    <p>Product Design • Front-End Development</p>
-                    <p>(HTML, CSS, Twitter Bootstrap, Javascript)</p>
-                  </div>
-                </div>
-              </div>
+            </div>
 
             <div className="box item" onClick={()=>window.open('http://forecast5.herokuapp.com', '_blank')}>
               <div className="content">
                 <h2 className="project-name">Forecast 5</h2>
                 <div className="project-details">
-                  <p>5-day Weather Forecast Project.</p>
-                  <p>Front-End Development</p>
-                  <p>(HTML, CSS, Javascript - React.js)</p>
+                  <p className="descrip">5-day Weather Forecast Project.</p>
+                  <p className="role">Front-End Development</p>
+                  <p className="stack">HTML, CSS, Javascript - React.js</p>
                 </div>
               </div>
             </div>
@@ -88,10 +88,10 @@ export default class Projects extends Component {
               </div>
             </div>
           </div>
-          </div>
-          <Footer />
         </div>
+        <Footer />
+      </div>
 
-      )
-    }
+    )
   }
+}

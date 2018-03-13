@@ -398,11 +398,14 @@ body {
 }
 
 .box .project-name {
+  font-size: 1.7em;
   opacity:1;
   color: white;
   text-align: center;
   z-index: 100;
   margin: 0px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .box .content {
@@ -429,6 +432,19 @@ body {
 
 .box .project-details p {
   margin: 10px;
+}
+
+.box .project-details .description {
+  font-size: 1.15em;
+}
+
+.box .project-details .role {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.box .project-details .stack {
+  font-size: 0.9em;
 }
 
 .box:before{
@@ -472,7 +488,6 @@ body {
     z-index: 10;
 }
 
-
 .projects-page .projects-row {
   display: flex;
   flex-direction: row;
@@ -489,7 +504,7 @@ body {
   color: #333;
 }
 
-.watdog-page {
+.vision-page {
   padding: 20px 0px;
   height: 650px;
   text-align: center;
@@ -584,7 +599,6 @@ body {
     font-size: 1.2em;
     margin: 10px 0px;
   }
-
 
   .contact-page .contact-form {
     width: auto;
