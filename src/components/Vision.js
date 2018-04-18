@@ -9,7 +9,7 @@ export default class Vision extends Component {
         <TopNav/>
         <div className='vision-page'>
           <h1>Vision</h1>
-          <h2>Image Recognition App in React Native</h3>
+          <h2>Image Recognition App in React Native</h2>
           <h4>Coming soon...</h4>
         </div>
         <Footer />

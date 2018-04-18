@@ -39,18 +39,17 @@ export default class ContactForm extends Component {
 
   postEmail() {
 
-    let newName = `${this.state.name} sent this on ${this.getCurrentDate()}`
+    let newName = `${this.state.name} sent this on ${this.getCurrentDate()}. Email is ${this.state.email}`
 
       let emailData = {
-        title: newName,
-        categories: this.state.email,
-        content: this.state.content,
+        author: newName,
+        text: this.state.content,
       }
 
       let stuff = [emailData, this.getCurrentDate()]
 
       // pass the actual values to make this POST CALL
-      return axios.post('https://reduxblog.herokuapp.com/api/posts?key=neilskey1234', emailData)
+      return axios.post('http://localhost:3001/api/comments', emailData)
       .then((response) => {
         console.log(response);
       })

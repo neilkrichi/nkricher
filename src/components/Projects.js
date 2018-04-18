@@ -15,7 +15,7 @@ export default class Projects extends Component {
         <TopNav />
         <div className='projects-page'>
           <div className='about-me'>
-            <h2>Hi! I'm Neil, and I'm a Front-End developer based out of Vancouver, BC.</h2>
+            <h2>Hi! I'm Neil, and I'm a Front-End developer based in Vancouver, BC.</h2>
             <p>I like ☕️, 🏀 and 🐶. </p>
           </div>
           <div className="projects-row">
