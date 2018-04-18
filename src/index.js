@@ -13,6 +13,11 @@ import ReactGA from 'react-ga'
 import registerServiceWorker from './registerServiceWorker'
 
 
+var http = require("http");
+setInterval(function() {
+    http.get("http://neilkrichi.herokuapp.com");
+}, 1500000); // every 5 minutes (300000)
+
 ReactGA.initialize('UA-105753102-1'); //Unique Google Analytics tracking number
 
 function logPageView() {
