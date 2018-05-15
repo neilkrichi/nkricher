@@ -662,6 +662,14 @@ body {
     font-size: 28px;
   }
 
+  .intro-text p {
+    padding: 20px 0px;
+  }
+
+  .resume-page {
+    padding: 40px 0px;
+  }
+
   .resume-page .cta-button {
     width: 27%;
   }
@@ -732,6 +740,15 @@ body {
 
   .contact-page .contact-form {
     margin: 0px;
+  }
+
+  .contact-page .location-details {
+    padding: 40px 20px;
+  }
+
+  .map-wrapper > div {
+    height: 280px;
+    width: 300px;
   }
   .footer {
     padding-bottom: 20px;
