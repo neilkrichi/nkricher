@@ -6,7 +6,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
 import NoMatch from './components/NoMatch'
-import Vision from './components/Vision'
+import Watdog from './components/Watdog'
 
 import { Router, Route, browserHistory } from 'react-router'
 import ReactGA from 'react-ga'
@@ -29,7 +29,7 @@ ReactDOM.render((
   <Router onUpdate={logPageView} history={browserHistory}>
     <Route path="/" component={Home} onUpdate={logPageView} />
     <Route path="/projects" component={Projects} onUpdate={logPageView} />
-    <Route path="/vision" component={Vision} onUpdate={logPageView} />
+    <Route path="/watdog" component={Watdog} onUpdate={logPageView} />
     <Route path="/resume" component={Resume} onUpdate={logPageView} />
     <Route path="/contact" component={Contact} onUpdate={logPageView} />
     <Route path="*" component={NoMatch}/>

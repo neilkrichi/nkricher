@@ -26,7 +26,7 @@ export default class Projects extends Component {
                 <div className="project-details">
                   <p className="descrip">Online community for Water Sports Enthusiasts.</p>
                   <p className="role">UI Design • Front-End Development</p>
-                  <p className="stack">HTML, CSS, Javascript (Meteor.js, React.js), Redux</p>
+                  <p className="stack">HTML, CSS, Javascript, Meteor, React/Redux</p>
                 </div>
               </div>
             </div>
@@ -35,22 +35,9 @@ export default class Projects extends Component {
               <div className="content">
                 <h2 className="project-name">TrackMyTeam</h2>
                 <div className="project-details">
-                  <p className="description">Athletic Management Software Platform.</p>
+                  <p className="descrip">Landing Page for an Athletic Management App.</p>
                   <p className="role">Product Design • Front-End Development</p>
-                  <p className="stack">HTML, CSS, Twitter Bootstrap, Javascript</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="box item" onClick={()=>browserHistory.push('/vision')}>
-              <div className="content">
-                <h2 className="project-name">Vision</h2>
-                <div className="project-details">
-                  <div className="project-details">
-                    <p className="descrip">Image Recognition App.</p>
-                    <p className="role">Product Design • Mobile Development</p>
-                    <p className="stack">React Native</p>
-                  </div>
+                  <p className="stack">HTML, CSS, Bootstrap, JavaScript</p>
                 </div>
               </div>
             </div>
@@ -61,7 +48,20 @@ export default class Projects extends Component {
                 <div className="project-details">
                   <p className="descrip">Online Coffee Marketplace.</p>
                   <p className="role">Product Design • Front-End Development</p>
-                  <p className="stack">HTML, CSS, Javascript - React.js</p>
+                  <p className="stack">HTML, CSS, JavaScript, React</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="box item" onClick={()=>window.open('http://git-repertoire.herokuapp.com')}>
+              <div className="content">
+                <h2 className="project-name">Github Repertoire</h2>
+                <div className="project-details">
+                  <div className="project-details">
+                    <p className="descrip">Github User Search App.</p>
+                    <p className="role">Front-End Development</p>
+                    <p className="stack">HTML, CSS, JavaScript, React/Redux</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -72,14 +72,38 @@ export default class Projects extends Component {
                 <div className="project-details">
                   <p className="descrip">5-day Weather Forecast Project.</p>
                   <p className="role">Front-End Development</p>
-                  <p className="stack">HTML, CSS, Javascript - React.js</p>
+                  <p className="stack">HTML, CSS, JavaScript, React</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="box item" onClick={()=>window.open('https://codepen.io/neilkrichi/full/YLEKjN/', '_blank')}>
+              <div className="content">
+                <h2 className="project-name">Rainbow 🌈</h2>
+                <div className="project-details">
+                  <p className="descrip">Sketching App.</p>
+                  <p className="role">Front-End Development</p>
+                  <p className="stack">HTML5 Canvas, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="box item" onClick={()=>browserHistory.push('/watdog')}>
+              <div className="content">
+                <h2 className="project-name">Watdog (Coming Soon)</h2>
+                <div className="project-details">
+                  <div className="project-details">
+                    <p className="descrip">Image Recognition App.</p>
+                    <p className="role">Product Design • Mobile Development</p>
+                    <p className="stack">React Native</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="box item" onClick={()=>window.location.href = "mailto:neilkrichi@gmail.com?subject=Hi%20Neil"}>
               <div className="content">
-                <h2 className="project-name">More?</h2>
+                <h2 className="project-name">Want to see more?</h2>
                 <div className="project-details">
                   <div className="project-details">
                     <p><FontAwesome className='' name='envelope-o' size='1x' />Drop me an email</p>
