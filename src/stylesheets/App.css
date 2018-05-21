@@ -320,7 +320,11 @@ body {
 .resume-page {
   text-align: center;
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 20px 0px 30px 0px;
+}
+
+.resume-page a {
+  text-decoration: none;
 }
 
 .resume-page .resume-pic {
@@ -329,7 +333,7 @@ body {
 }
 
 .resume {
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 .resume > canvas {
@@ -337,14 +341,14 @@ body {
 }
 
 .resume-page .cta-button {
-  width: 15%;
+  width: 30%;
   color: #333333;
-  padding: 8px 0px;
-  margin: 8px 0;
+  padding: 10px 30px;
+  margin: 15px 0px;
   border: 1px solid;
   border-color: #333333;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   outline: none;
 }
@@ -544,8 +548,7 @@ body {
   }
 
   .resume-page .cta-button {
-    width: 20%;
-    padding: 12px 0px;
+    width: 30%;
   }
 
   .resume-page .resume-pic {
