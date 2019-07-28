@@ -16,11 +16,11 @@ export default class Projects extends Component {
         <div className='projects-page'>
           <div className='about-me'>
             <h2>Hi! I'm Neil, and I'm a Front-End developer based in Vancouver, BC.</h2>
-            <p>I like ☕️, 🏀 and 🐶. </p>
+            <p>I like ☕️, ⚽ and 🐶. </p>
           </div>
           <div className="projects-row">
 
-            <div className="box item" onClick={()=>window.open('http://www.gosurflife.com', '_blank')}>
+            {/* <div className="box item" onClick={()=>window.open('http://www.gosurflife.com', '_blank')}>
               <div className="content">
                 <h2 className="project-name">Surflife</h2>
                 <div className="project-details">
@@ -29,7 +29,7 @@ export default class Projects extends Component {
                   <p className="stack">HTML, CSS, Javascript, Meteor, React/Redux</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="box item" onClick={()=>window.open('http://tmteam.herokuapp.com', '_blank')}>
               <div className="content">
