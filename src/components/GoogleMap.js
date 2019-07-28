@@ -8,10 +8,10 @@ export default class GoogleMap extends Component {
       zoom: 13,
       center: home
     });
-    var marker = new window.google.maps.Marker({
-      position: home ,
-      map: map
-    });
+    // var marker = new window.google.maps.Marker({
+    //   position: home ,
+    //   map: map
+    // });
   }
 
   render() {
