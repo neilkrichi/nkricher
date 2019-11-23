@@ -29,7 +29,7 @@ export default class Home extends Component {
           </div>
           <div className='intro-text'>
             <h3 className="app-intro">
-              My name is Neil Krichi.
+              I'm Daniel Mossos Pitre the faggot.
             </h3>
             <p className='description'><span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> Front-End Developer and Lifelong Learner.</p>
           </div>
