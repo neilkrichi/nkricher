@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import fire from 'firebase/app';
+import 'firebase/database';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBcJUKGyY97TeBfX9xShAR5G1IlaTAciBo",
+  authDomain: "firebasics-79185.firebaseapp.com",
+  databaseURL: "https://firebasics-79185.firebaseio.com",
+  projectId: "firebasics-79185",
+  storageBucket: "firebasics-79185.appspot.com",
+  messagingSenderId: "234788147074",
+  appId: "1:234788147074:web:9ecacfc8eca3905941099b",
+  measurementId: "G-X24RJS3R29"
+}; 
 
 export default class ContactForm extends Component {
   constructor(props) {
@@ -17,13 +29,13 @@ export default class ContactForm extends Component {
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.validateEmail = this.validateEmail.bind(this)
-  }
+    
 
-  getCurrentDate(){
-    let dt = new Date()
-    let utcDt = dt.toUTCString()
-
-    return utcDt
+    if (!fire.apps.length) {
+      fire.initializeApp(firebaseConfig);
+    }
+    this.firedb = fire.database();
+    this.messages = this.firedb.ref('messages');
   }
 
   validateEmail(){
@@ -38,25 +50,15 @@ export default class ContactForm extends Component {
   }
 
   postEmail() {
-
-    let newName = `${this.state.name} sent this on ${this.getCurrentDate()}. Email is ${this.state.email}`
-
-      let emailData = {
-        author: newName,
-        text: this.state.content,
+      const messageData = {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.content,
+        createdAt: new Date()
       }
 
-      let stuff = [emailData, this.getCurrentDate()]
-
-      // pass the actual values to make this POST CALL
-      return axios.post('http://localhost:3001/api/comments', emailData)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
+      const newMessageData = this.messages.push();
+      newMessageData.set(messageData);
   }
 
   handleInputChange(event) {
@@ -66,17 +68,18 @@ export default class ContactForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     if (this.state.name !== '' && this.state.content !== '' && this.state.email !== '' && this.state.emailError !== 'Please enter a valid email address') {
-      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent and I will get back to you shortly.', name: '', email: '', content: ''});
+      this.setState({emptyFieldError: '', successMessage: 'Success! Your message was sent, I will get back to you shortly.', name: '', email: '', content: ''});
       this.postEmail();
     }
     else {
-      this.setState({emptyFieldError: 'All field are required.', successMessage: ''});
+      this.setState({emptyFieldError: 'All fields are required.', successMessage: ''});
     }
   }
 
   render(){
     return(
       <form className='create-form' onSubmit={this.handleSubmit}>
+        <span className='success-message'>{this.state.successMessage}</span>
         <div>
           <label>Your name</label><br/>
           <input
@@ -111,7 +114,6 @@ export default class ContactForm extends Component {
         </div>
         <button type="submit" className='submit-form' onClick={this.handleSubmit}>Send</button>
         <br/> <span className='error-message'>{this.state.emptyFieldError}</span>
-        <span className='success-message'>{this.state.successMessage}</span>
       </form>
     )
   }

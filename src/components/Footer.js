@@ -9,15 +9,15 @@ export default class Footer extends Component {
     return (
       <div className='footer'>
         <span className="fa-socials xs-only">
-          <Link to='https://github.com/neilkrichi' target="_blank"><FontAwesome className="fa" name='github' size='2x' /></Link>
-          <Link to='https://linkedin.com/in/neilkrichi' target="_blank"><FontAwesome className="fa" name='linkedin' size='2x' /></Link>
-          <Link to='https://behance.net/neilkrichi04ff' target="_blank"><FontAwesome className="fa" name='behance' size='2x' /></Link>
-          <Link to='https://codepen.io/neilkrichi' target="_blank"><FontAwesome className="fa" name='codepen' size='2x' /></Link>
+          <Link to='https://github.com/neilkrichi' target="_blank"><FontAwesome className="fa" name='github' /></Link>
+          <Link to='https://linkedin.com/in/neilkrichi' target="_blank"><FontAwesome className="fa" name='linkedin' /></Link>
+          <Link to='https://behance.net/neilkrichi04ff' target="_blank"><FontAwesome className="fa" name='behance' /></Link>
+          <Link to='https://codepen.io/neilkrichi' target="_blank"><FontAwesome className="fa" name='codepen' /></Link>
         </span>
         <br className='xs-only' />
-        <span className='copyright pull-left'><FontAwesome className='' name='copyright' size='1x' />2019 Neil Krichi </span>
+        <span className='copyright pull-left'><FontAwesome className='' name='copyright' />2019 Neil Krichi </span>
         <br className='xs-only' />
-        <span className='pull-right'>Made with<FontAwesome className='' name='heart-o' size='1x' /> & <FontAwesome className='' name='coffee' size='1x' />in Vancouver, Canada.</span>
+        <span className='pull-right'>Made with<FontAwesome className='' name='heart-o' /> & <FontAwesome className='' name='coffee' />in Vancouver, Canada.</span>
       </div>
     )
   }

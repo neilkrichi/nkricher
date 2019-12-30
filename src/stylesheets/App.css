@@ -258,7 +258,7 @@ body {
 }
 
 .create-form .success-message {
-  color: black;
+  color: green;
   font-size: 12px;
 }
 
