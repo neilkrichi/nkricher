@@ -13,8 +13,8 @@ export default class Projects extends Component {
     return (
       <div>
         <TopNav />
-        <div className='projects-page'>
-          <div className='about-me'>
+        <div className="projects-page">
+          <div className="about-me">
             <h2>Hi! I'm Neil, and I'm a Front-End developer based in Vancouver, BC.</h2>
             <p>I like ☕️, ⚽ and 🐶. </p>
           </div>
@@ -76,7 +76,7 @@ export default class Projects extends Component {
               </div>
             </div>
 
-            <div className="box item" onClick={()=>browserHistory.push('/watdog')}>
+            {/* <div className="box item" onClick={()=>browserHistory.push('/watdog')}>
               <div className="content">
                 <h2 className="project-name">Watdog (Coming Soon)</h2>
                 <div className="project-details">
@@ -87,7 +87,7 @@ export default class Projects extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="box item" onClick={()=>window.location.href = "mailto:neilkrichi@gmail.com?subject=Hi%20Neil"}>
               <div className="content">
