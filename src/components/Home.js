@@ -24,9 +24,6 @@ export default class Home extends Component {
       <div className="App">
         <TopNav />
         <div className="intro">
-          <div className='avatar'>
-            <img className='avatar-pic' src={avatar} />
-          </div>
           <div className='intro-text'>
             <h3 className="app-intro">
               I'm Neil Krichi.
