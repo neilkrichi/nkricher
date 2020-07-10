@@ -15,7 +15,7 @@ export default class Footer extends Component {
           <Link to='https://codepen.io/neilkrichi' target="_blank"><FontAwesome className="fa" name='codepen' /></Link>
         </span>
         <br className='xs-only' />
-        <span className='copyright pull-left'><FontAwesome className='' name='copyright' />2019 Neil Krichi </span>
+        <span className='copyright pull-left'><FontAwesome className='' name='copyright' />2020 Neil Krichi </span>
         <br className='xs-only' />
         <span className='pull-right'>Made with<FontAwesome className='' name='heart-o' /> & <FontAwesome className='' name='coffee' />in Vancouver, Canada.</span>
       </div>

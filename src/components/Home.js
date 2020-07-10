@@ -28,7 +28,7 @@ export default class Home extends Component {
             <h3 className="app-intro">
               I'm Neil Krichi.
             </h3>
-            <p className='description'><span className='typewriter'><TypeOut words={words} typeSpeed={100} /></span> Front-End Developer and Lifelong Learner.</p>
+            <p className='description'><span className='typewriter'><TypeOut words={words} typeSpeed={100} caret={true}/></span> Front-End Developer and Lifelong Learner.</p>
           </div>
         </div>
         <Link to='/resume'><button className="cta-button" onClick={() => {this.handleClick()}}>Take a look at my resume</button></Link>

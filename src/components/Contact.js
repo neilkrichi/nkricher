@@ -13,7 +13,7 @@ export default class Contact extends Component {
         <TopNav />
         <div className='contact-page'>
           <div className='contact-form'>
-            <h1>Send me an email</h1>
+            <h1>Send me a message</h1>
             <ContactForm />
           </div>
           <div className='location-details'>
