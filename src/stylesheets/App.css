@@ -40,7 +40,7 @@ body {
 }
 
 .App-header {
-  background-color: #1B1A1A;
+  background-color: #0e0e0e;
   /* background: linear-gradient(216deg, #d90b90, #bf06ac, #9f00cd); */
   padding: 10px 80px;
   color: white;
@@ -155,7 +155,7 @@ body {
 .cta-button:hover {
   background-color: #f3fefe;
   border: 2px solid transparent;
-  color: #1B1A1A;
+  color: #0e0e0e;
 }
 
 .cta-button a, .cta-button:hover a {
@@ -244,7 +244,7 @@ body {
 .create-form .submit-form {
   font-family: inherit;
   width: 40%;
-  background-color: #1B1A1A;
+  background-color: #0e0e0e;
   color: white;
   padding: 8px 5px;
   margin: 15px 0;
@@ -256,7 +256,7 @@ body {
 }
 
 .create-form .submit-form:hover {
-  background-color: rgba(27, 26, 26, 0.82);
+  background-color: black;
 }
 
 .contact-page .location-details {
@@ -322,11 +322,11 @@ body {
 
 .resume-page .cta-button {
   width: 30%;
-  color: #333333;
+  color: #0e0e0e;
   padding: 10px 30px;
   margin: 15px 0px;
   border: 1px solid;
-  border-color: #333333;
+  border-color: #0e0e0e;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
@@ -334,14 +334,14 @@ body {
 }
 
 .resume-page .cta-button:hover {
-  background: linear-gradient(216deg, #DA0B8F, #bb05b0, #b003bb);
+  background: #0e0e0e;
   color: white;
   border-color: white;
 }
 
 .projects-page .about-me {
   padding: 0px 30px;
-  color: #333333;
+  color: #0e0e0e;
 }
 
 .projects-page .about-me h1 {
@@ -599,7 +599,7 @@ body {
 
   .create-form .submit-form {
     width: 100%;
-    background-color: #1B1A1A;
+    background-color: #0e0e0e;
     color: white;
     padding: 12px 5px;
     margin: 15px 0;
@@ -709,7 +709,7 @@ body {
   .topnav ul li {
     display: block;
     padding: 10px 10px;
-    background-color: #1B1A1A;
+    background-color: #0e0e0e;
     /* background: linear-gradient(216deg, #DA0B8F, #A100CD, #5300DA); */
     margin: 0px;
     font-size: 1.3em;
