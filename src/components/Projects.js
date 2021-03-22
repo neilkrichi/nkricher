@@ -30,13 +30,13 @@ export default class Projects extends Component {
               </div>
             </div>
 
-            <div className="box item" onClick={()=>window.open('http://roastrr.herokuapp.com', '_blank')}>
+            <div className="box item" onClick={()=>window.open('https://neilkrichi.github.io/wildfire-tracker/', '_blank')}>
               <div className="content">
-                <h2 className="project-name">Roastr</h2>
+                <h2 className="project-name">Wildfire</h2>
                 <div className="project-details">
-                  <p className="descrip">Online Coffee Marketplace.</p>
-                  <p className="role">Product Design • Front-End Development</p>
-                  <p className="stack">HTML, CSS, JavaScript, React</p>
+                  <p className="descrip">Wildfire & Volcano Tracker.</p>
+                  <p className="role">Front-End Development</p>
+                  <p className="stack">HTML, CSS, JavaScript, React, React Hooks, NASA OpenAPI</p>
                 </div>
               </div>
             </div>
@@ -76,18 +76,18 @@ export default class Projects extends Component {
               </div>
             </div>
 
-            {/* <div className="box item" onClick={()=>browserHistory.push('/watdog')}>
+            <div className="box item" onClick={()=>window.open('https://codepen.io/neilkrichi/full/rvjbdx/', '_blank')}>
               <div className="content">
-                <h2 className="project-name">Watdog (Coming Soon)</h2>
+                <h2 className="project-name">Screen Slider</h2>
                 <div className="project-details">
                   <div className="project-details">
-                    <p className="descrip">Image Recognition App.</p>
-                    <p className="role">Product Design • Mobile Development</p>
-                    <p className="stack">React Native</p>
+                    <p className="descrip">Split Landing Page</p>
+                    <p className="role">Product Design • UI Development</p>
+                    <p className="stack">HTML, CSS, Vanilla JS</p>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
 
             <div className="box item" onClick={()=>window.location.href = "mailto:neilkrichi@gmail.com?subject=Hi%20Neil"}>
               <div className="content">
